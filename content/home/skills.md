@@ -33,7 +33,7 @@ subtitle = ""
   description = "90%"  
   
 [[feature]]
-  icon = "gamepad
+  icon = "gamepad"
   icon_pack = "fas"
   name = "Videogames"
   description = "10%"
