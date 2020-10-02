@@ -27,7 +27,7 @@ subtitle = ""
   description = "90%"
   
 [[feature]]
-  icon = "chart-scatter"
+  icon = "dice-d20"
   icon_pack = "fas"
   name = "Statistics"
   description = "90%"  
