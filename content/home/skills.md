@@ -19,17 +19,23 @@ subtitle = ""
   icon_pack = "fab"
   name = "R"
   description = "90%"
+
+[[feature]]
+  icon = "python"
+  icon_pack = "fab"
+  name = "Python"
+  description = "90%"
   
 [[feature]]
-  icon = "chart-line"
+  icon = "chart-scatter"
   icon_pack = "fas"
   name = "Statistics"
-  description = "100%"  
+  description = "90%"  
   
 [[feature]]
-  icon = "camera-retro"
+  icon = "gamepad
   icon_pack = "fas"
-  name = "Photography"
+  name = "Videogames"
   description = "10%"
 
 # Uncomment to use emoji icons.
