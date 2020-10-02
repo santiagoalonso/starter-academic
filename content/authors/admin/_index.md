@@ -73,6 +73,6 @@ user_groups:
 - Visitors
 ---
 
-Santiago Alonso-Díaz is assistant professor at the Economics Department of Universidad Javeriana, Bogotá, Colombia. His research interests include math cognition, bayesian cognition, and behavioral economics. He leads the semillero of Behavioral Economics, which develops undergraduate students' interests in cognitive and decision making.
+Santiago Alonso-Díaz is assistant professor at the Economics Department of Universidad Javeriana, Bogotá, Colombia. His research interests include math cognition, bayesian cognition, and behavioral economics. He leads the semillero of Behavioral Economics, which develops undergraduate students' interests in cognition and decision making.
 
 
