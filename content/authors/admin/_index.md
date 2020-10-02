@@ -30,10 +30,10 @@ education:
   - course: PhD in Brain & Cognitive Sciences
     institution: University of Rochester
     year: 2017
-  - course: M.Sc in Neuroscience and Education
+  - course: M. Sc. in Neuroscience and Education
     institution: Columbia University
     year: 2009
-  - course: BSc in Finance
+  - course: B. Sc. in Finance
     institution: Universidad Externado
     year: 2005
 
