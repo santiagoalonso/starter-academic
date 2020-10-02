@@ -47,7 +47,7 @@ subtitle = ""
 [[feature]]
   icon = "language"
   icon_pack = "fas"
-  name = "Spanish/English jokes"
+  name = "Jokes"
   description = "200%"
 
 # Uncomment to use emoji icons.
