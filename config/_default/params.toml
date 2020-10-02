@@ -97,7 +97,7 @@ address = {street = "Universidad Javeriana", city = "Bogotá", region = "", post
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "37.4275", longitude = "-122.1697"}
+coordinates = {latitude = "4.628894", longitude = "-74.064664"}
 
 # Directions for visitors to locate you.
 directions = "Piso 7, Ed. 20"
