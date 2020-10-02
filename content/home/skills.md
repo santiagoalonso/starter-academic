@@ -33,13 +33,13 @@ subtitle = ""
   description = ".001%"  
   
 [[feature]]
-  icon = "ghost"
+  icon = "project-diagram"
   icon_pack = "fas"
   name = "Cognition"
   description = ".001%"
   
 [[feature]]
-  icon = "gamepad"
+  icon = "ghost"
   icon_pack = "fas"
   name = "Videogames"
   description = ".001%"
