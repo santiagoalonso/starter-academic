@@ -33,9 +33,9 @@ subtitle = ""
   description = ".001%"  
   
 [[feature]]
-  icon = "infinity"
+  icon = "ghost"
   icon_pack = "fas"
-  name = "Math"
+  name = "Cognition"
   description = ".001%"
   
 [[feature]]
