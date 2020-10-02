@@ -33,7 +33,7 @@ subtitle = ""
   description = ".001%"  
   
 [[feature]]
-  icon = "math"
+  icon = "infinity"
   icon_pack = "fas"
   name = "Math"
   description = ".001%"
