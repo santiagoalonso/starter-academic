@@ -3,7 +3,7 @@
 
 title: "My Article Name"
 subtitle: ""
-summary: ""
+summary: "Articulo super interesante"
 authors: []
 tags: []
 categories: []
@@ -11,6 +11,9 @@ date: 2020-10-03T08:29:23-05:00
 lastmod: 2020-10-03T08:29:23-05:00
 featured: false
 draft: false
+
+Cosas interesantes a decir
+
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
