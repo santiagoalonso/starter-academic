@@ -9,8 +9,10 @@ weight = 60  # Order that this section will appear.
 
 title = "Recent Posts"
 subtitle = ""
+sadakjla 
 
 [content]
+  ada laadsakc xlas
   # Page type to display. E.g. post, talk, or publication.
   page_type = "post"
   
@@ -66,4 +68,4 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
-makdjalfak
+
