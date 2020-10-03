@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "My Article Name"
+title: "Transformers"
 subtitle: ""
 summary: "Articulo super interesante"
 authors: []
@@ -12,7 +12,6 @@ lastmod: 2020-10-03T08:29:23-05:00
 featured: false
 draft: false
 
-Cosas interesantes a decir
 
 
 # Featured image
@@ -30,3 +29,6 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+
+Esto es una prueba
+
