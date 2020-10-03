@@ -30,8 +30,8 @@ image:
 projects: []
 ---
 
-Esto es una prueba
-No se por que no sirve
+Esto es una prueba <br>
+No se por que no sirve <br>
 pense que iba a ser más fácil
 
 
