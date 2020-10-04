@@ -4,7 +4,7 @@
 title: "Intrinsic Whole Number Bias in Humans"
 authors: [Santiago Alonso-Díaz, Steven Piantadosi, Benjamin Hayden, Jessica Cantlon]
 date: 2018-06-25T20:09:21-05:00
-doi: ""
+doi: "https://doi.org/10.1037/xhp0000544"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2020-10-03T20:09:21-05:00
