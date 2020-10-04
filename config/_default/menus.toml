@@ -9,12 +9,12 @@
   weight = 10
 
 [[main]]
-  name = "Posts"
+  name = "Reflections"
   url = "#posts"
   weight = 20
 
 [[main]]
-  name = "Cog. Models Compendium"
+  name = "Cog. Sci. Codes"
   url = "#cogmodel"
   weight = 30
 
