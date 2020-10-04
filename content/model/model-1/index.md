@@ -53,6 +53,14 @@ three --> two
 two --> c2
 ```
 
+# Diagram 3
+
+```mermaid
+	graph TB
+	    A & B--> C & D
+```
+
+# Python Code
 
 ```python
 for i in range(8):
