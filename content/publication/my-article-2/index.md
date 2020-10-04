@@ -43,7 +43,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: "http://revistas.pucp.edu.pe/index.php/educacion/article/view/2600"
+url_pdf: "http://revistas.pucp.edu.pe/index.php/educacion/article/view/2600/2548"
 url_code:
 url_dataset:
 url_poster:
