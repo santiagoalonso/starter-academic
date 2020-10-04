@@ -22,8 +22,10 @@ bio: My research interests include math cognition, bayesian cognition.
 
 interests:
 - Math cognition
+- Bayesian cognition
 - Confidence
-- Behavioral and Neuroeconomics
+- Behavioral economics
+- Neuroeconomics
 
 education:
   courses:
