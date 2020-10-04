@@ -1,9 +1,9 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "My Article 2"
-authors: []
-date: 2020-10-03T20:08:44-05:00
+title: "Comprender: propuesta de pivotes"
+authors: [Santiago Alonso-Díaz]
+date: 2011-03-03T20:08:44-05:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -13,13 +13,20 @@ publishDate: 2020-10-03T20:08:44-05:00
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "Educación"
 publication_short: ""
 
-abstract: ""
+abstract: "The basic question is what it is needed to understand. The proposal is that understanding
+requires pivots, a useful word to integrate findings in different areas. In
+that sense, a pivot can be understood as a mental model. It can also be the body,
+an idea based on embodied cognition. But more fundamentally, our biology and
+brain are the central pivots for understanding. Therefore, this essay can be seen as
+a brief travel through three different subjects: Mental Models, Embodied Cognition
+and Cognitive Neuroscience, all of which are necessary to understand how a
+person understands."
 
 # Summary. An optional shortened abstract.
 summary: ""
@@ -36,7 +43,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf: "http://revistas.pucp.edu.pe/index.php/educacion/article/view/2600"
 url_code:
 url_dataset:
 url_poster:
