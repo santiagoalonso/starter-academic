@@ -1,10 +1,10 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Neuroeconomía: panorama y hallazgos recientes"
+title: "Temporal Discounting and Number Representation"
 authors: [Santiago Alonso-Díaz]
-date: 2011-10-09T20:09:21-05:00
-doi: ""
+date: 2013-10-09T20:09:21-05:00
+doi: "10.1080/15427560.2013.820188"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2020-10-03T20:09:21-05:00
@@ -16,10 +16,17 @@ publishDate: 2020-10-03T20:09:21-05:00
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Observatorio de Operaciones Numéricas"
-publication_short: "ODEON"
+publication: "Journal of Behavioral Finance"
+publication_short: ""
 
-abstract: "Neuroeconomics is a new economic sub-discipline that tries to cross neurosciences with economics. Even with its recent appearance, the attention it receives, in terms of publications, is remarkable. To try to give an overview of recent findings, this review is divided into three parts: value, probability, and confidence. The first two follow from the expected value framework, a central issue in the decision-making area. The third section focuses on an experimental economics game: trust. The choice of this game is due to its relevance to finance, as it shows how reputation and trust appear in contexts where there is an investor and a manager"
+abstract: "Intertemporal decisions usually involve numbers: subjects decide between rewards, with different
+delays and probabilities. This paper is a brief overview of findings in the area of number
+cognition, followed by some theoretical applications of these findings in intertemporal decisions.
+In particular, the fact that numbers are neither linearly perceived nor processed has
+interesting consequences in the analysis of decisions that involve numbers. Two conflicting
+possibilities arise, (1) Intertemporal decisions are not about time but about number comparisons,
+or (2) intertemporal decisions are indeed about time but with the relevant numbers
+compressed in their logarithmic form."
 
 # Summary. An optional shortened abstract.
 summary: ""
@@ -36,7 +43,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: "https://poseidon01.ssrn.com/delivery.php?ID=855089082102113072097101094092103113102082065014007039108084071002094117076005094111050117107034029039046029087030121116012103039086075069039065003115110021088107119020043021065087070088119022122024005012076117126081118122095064105084091117114105022031&EXT=pdf"
+url_pdf: 
 url_code:
 url_dataset:
 url_poster:

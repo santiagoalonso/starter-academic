@@ -1,9 +1,9 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Neuroeconomía: panorama y hallazgos recientes"
-authors: [Santiago Alonso-Díaz]
-date: 2011-10-09T20:09:21-05:00
+title: "Intrinsic Whole Number Bias in Humans"
+authors: [Santiago Alonso-Díaz, Steven Piantadosi, Benjamin Hayden, Jessica Cantlon]
+date: 2018-06-25T20:09:21-05:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -16,10 +16,21 @@ publishDate: 2020-10-03T20:09:21-05:00
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Observatorio de Operaciones Numéricas"
-publication_short: "ODEON"
+publication: "Journal of Experimental Psychology: Human Perception and Performance"
+publication_short: "JEP: HPP"
 
-abstract: "Neuroeconomics is a new economic sub-discipline that tries to cross neurosciences with economics. Even with its recent appearance, the attention it receives, in terms of publications, is remarkable. To try to give an overview of recent findings, this review is divided into three parts: value, probability, and confidence. The first two follow from the expected value framework, a central issue in the decision-making area. The third section focuses on an experimental economics game: trust. The choice of this game is due to its relevance to finance, as it shows how reputation and trust appear in contexts where there is an investor and a manager"
+abstract: "Humans have great difficulty comparing quotients including fractions, proportions, and probabilities and
+often erroneously isolate the whole numbers of the numerators and denominators to compare them. Some
+have argued that the whole number bias is a compensatory strategy to deal with difficult comparisons.
+We examined adult humans’ preferences for gambles that differed only in numerosity, and not in factors
+that influence their expected value (probabilities and stakes). Subjects consistently preferred gambles
+with more winning balls to ones with fewer, even though the probabilities were mathematically identical,
+replicating prior results. In a second experiment, we found that subjects accurately represented the
+relative probabilities of the choice options during rapid nonverbal probability judgments but nonetheless
+showed biases based on whole numbers. We mathematically formalized and quantitatively evaluated
+cognitive rules based on existing hypotheses that attempt to explain subjects’ whole number biases during
+quotient comparisons. The results show that the whole number bias is intrinsic to the way humans solve
+quotient comparisons rather than a compensatory strategy."
 
 # Summary. An optional shortened abstract.
 summary: ""
@@ -36,7 +47,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: "https://poseidon01.ssrn.com/delivery.php?ID=855089082102113072097101094092103113102082065014007039108084071002094117076005094111050117107034029039046029087030121116012103039086075069039065003115110021088107119020043021065087070088119022122024005012076117126081118122095064105084091117114105022031&EXT=pdf"
+url_pdf:
 url_code:
 url_dataset:
 url_poster:

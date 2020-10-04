@@ -1,8 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Probabilistic Categorization with Meaningful
-Information Using Traders and Non-Traders"
+title: "Probabilistic Categorization with Meaningful Information Using Traders and Non-Traders"
 authors: [Santiago Alonso-Díaz]
 date: 2011-10-09T20:09:18-05:00
 doi: ""
@@ -17,10 +16,10 @@ publishDate: 2020-10-03T20:09:18-05:00
 publication_types: ["4"]
 
 # Publication name and optional abbreviated publication name.
-publication: "DOCUMENTOS DE INVESTIGACIÓN"
+publication: "Documentos de Investigación"
 publication_short: ""
 
-abstract: "This study evaluated if facial features of a probabilistic task affected performance. In particular, cards/
+abstract: "This study evaluated if superficial features of a probabilistic task affected performance. In particular, cards/
 cues had meanings, related to the cover story. Participants had to predict if the price of a share went up
 or down, given a combination of the meaningful cards. Two types of participants were tested. One group
 was related to the cover story: they were traders. The other was composed by subjects without any trading

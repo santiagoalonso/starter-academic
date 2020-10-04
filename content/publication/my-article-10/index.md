@@ -1,9 +1,9 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Neuroeconomía: panorama y hallazgos recientes"
-authors: [Santiago Alonso-Díaz]
-date: 2011-10-09T20:09:21-05:00
+title: "The Role of Risk Attitudes in Probabilistic Environments"
+authors: [Santiago Alonso-Díaz, Carlos Forero]
+date: 2013-10-09T20:09:21-05:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -19,7 +19,7 @@ publication_types: ["2"]
 publication: "Observatorio de Operaciones Numéricas"
 publication_short: "ODEON"
 
-abstract: "Neuroeconomics is a new economic sub-discipline that tries to cross neurosciences with economics. Even with its recent appearance, the attention it receives, in terms of publications, is remarkable. To try to give an overview of recent findings, this review is divided into three parts: value, probability, and confidence. The first two follow from the expected value framework, a central issue in the decision-making area. The third section focuses on an experimental economics game: trust. The choice of this game is due to its relevance to finance, as it shows how reputation and trust appear in contexts where there is an investor and a manager"
+abstract: "In this work we asked if risk attitudes influence the way agents learn in a probabilistic environment. For that purpose, 31 male students played a version of a well-known game called the multi-armed bandit (with four levers/buttons). We found that after controlling for cognitive abilities (i.e. Raven’s test), risk seekers in gains preferred to explore in this environment, rather than exploit options, even if one of them was clearly more rewarding. We briefly discuss the reasons and some implications for financial decision theories, in particular, for Bayesian and behavioral proposals"
 
 # Summary. An optional shortened abstract.
 summary: ""
@@ -36,7 +36,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: "https://poseidon01.ssrn.com/delivery.php?ID=855089082102113072097101094092103113102082065014007039108084071002094117076005094111050117107034029039046029087030121116012103039086075069039065003115110021088107119020043021065087070088119022122024005012076117126081118122095064105084091117114105022031&EXT=pdf"
+url_pdf: "https://poseidon01.ssrn.com/delivery.php?ID=700081022092072113127123067092103089010076064020040013104095091123090081126112108025026057038062020002124109069081112114117122006010088060018024080003024078090088022060020008101027099117024021091119082111119016117031118024098025075111087082101114098124&EXT=pdf"
 url_code:
 url_dataset:
 url_poster:

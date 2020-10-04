@@ -1,9 +1,9 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Neuroeconomía: panorama y hallazgos recientes"
-authors: [Santiago Alonso-Díaz]
-date: 2011-10-09T20:09:21-05:00
+title: "A threshold-free model of numerosity comparisons"
+authors: [Santiago Alonso-Díaz, Jessica Cantlon, Steven Piantadosi]
+date: 2018-04-05T20:09:21-05:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -16,10 +16,22 @@ publishDate: 2020-10-03T20:09:21-05:00
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Observatorio de Operaciones Numéricas"
-publication_short: "ODEON"
+publication: "PLoS One"
+publication_short: ""
 
-abstract: "Neuroeconomics is a new economic sub-discipline that tries to cross neurosciences with economics. Even with its recent appearance, the attention it receives, in terms of publications, is remarkable. To try to give an overview of recent findings, this review is divided into three parts: value, probability, and confidence. The first two follow from the expected value framework, a central issue in the decision-making area. The third section focuses on an experimental economics game: trust. The choice of this game is due to its relevance to finance, as it shows how reputation and trust appear in contexts where there is an investor and a manager"
+abstract: "A dominant mechanism in the Judgment and Decision Making literature states that information
+is accumulated about each choice option until a decision threshold is met. Only after
+that threshold does a subject start to execute a motor response to indicate their choice.
+However, recent research has revealed spatial gradients in motor responses as a function
+of comparison difficulty as well as changes-of-mind in the middle of an action, both suggesting
+continued accumulation and processing of decision-related signals after the decision
+boundary. Here we present a formal model and supporting data from a number comparison
+task that a continuous motor planner, combined with a simple statistical inference scheme,
+can model detailed behavioral effects without assuming a threshold. This threshold-free
+model reproduces subjects' sensitivity to numerical distance in reaching, accuracy, reaction
+time, and changes of mind. We argue that the motor system positions the effectors using an
+optimal biomechanical feedback controller, and continuous statistical inference on outputs
+from cognitive processes"
 
 # Summary. An optional shortened abstract.
 summary: ""
@@ -36,7 +48,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: "https://poseidon01.ssrn.com/delivery.php?ID=855089082102113072097101094092103113102082065014007039108084071002094117076005094111050117107034029039046029087030121116012103039086075069039065003115110021088107119020043021065087070088119022122024005012076117126081118122095064105084091117114105022031&EXT=pdf"
+url_pdf: "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0195188&type=printable"
 url_code:
 url_dataset:
 url_poster:

@@ -1,9 +1,9 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "My Article 6"
-authors: []
-date: 2020-10-03T20:09:26-05:00
+title: "Reconocimiento de regularidades probabilísticas"
+authors: [Santiago Alonso-Díaz]
+date: 2013-03-03T20:09:26-05:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -13,13 +13,13 @@ publishDate: 2020-10-03T20:09:26-05:00
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["6"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "Experimentos en ciencias sociales: usos, métodos y aplicaciones"
 publication_short: ""
 
-abstract: ""
+abstract: "Book chapter with an overview of probabilistic learning and an eyetracking experiment exploring how people collect information in the weather prediction task"
 
 # Summary. An optional shortened abstract.
 summary: ""

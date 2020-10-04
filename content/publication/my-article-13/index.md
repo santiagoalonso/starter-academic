@@ -1,25 +1,25 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Neuroeconomía: panorama y hallazgos recientes"
-authors: [Santiago Alonso-Díaz]
-date: 2011-10-09T20:09:21-05:00
+title: "The inverse operation modulates confidence"
+authors: [Santiago Alonso-Diaz, Gabriel Penagos]
+date: 2019-04-04T19:51:11-05:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2020-10-03T20:09:21-05:00
+publishDate: 2020-10-03T19:51:11-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["2"]
+publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Observatorio de Operaciones Numéricas"
-publication_short: "ODEON"
+publication: "Proceedings of the 41th Annual Meeting of the Cognitive Science Society."
+publication_short: ""
 
-abstract: "Neuroeconomics is a new economic sub-discipline that tries to cross neurosciences with economics. Even with its recent appearance, the attention it receives, in terms of publications, is remarkable. To try to give an overview of recent findings, this review is divided into three parts: value, probability, and confidence. The first two follow from the expected value framework, a central issue in the decision-making area. The third section focuses on an experimental economics game: trust. The choice of this game is due to its relevance to finance, as it shows how reputation and trust appear in contexts where there is an investor and a manager"
+abstract: "Inversion is an essential operation, for instance in math (negatives) and action (to move in an opposite direction). Eventhough humans can invert is unclear how is implemented. There are two alternative hypotheses. The first possibility (H1)is that only positives are represented and negatives (inverses) are implemented as either a response (e.g. left to right) ortask demand flip (e.g. ¿ to ¡). The second possibility (H2) is that both positives and negatives (inverses) are encoded.To disambiguate them, we ran two experiments where participants had to apply the inverse while implicitly reportingconfidence. If inverting modifies encoding of otherwise identical stimulation then confidence should differ. We found thatconfidence was lower in inverse trials than direct/positive trials. This suggests that the inverse is not a simple responsestrategy or modification of task demands (H1), rather inverting modulates how cognitive information is encoded and usedin the brain (H2)."
 
 # Summary. An optional shortened abstract.
 summary: ""
@@ -36,7 +36,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: "https://poseidon01.ssrn.com/delivery.php?ID=855089082102113072097101094092103113102082065014007039108084071002094117076005094111050117107034029039046029087030121116012103039086075069039065003115110021088107119020043021065087070088119022122024005012076117126081118122095064105084091117114105022031&EXT=pdf"
+url_pdf: "https://cogsci.mindmodeling.org/2019/papers/0643/0643.pdf"
 url_code:
 url_dataset:
 url_poster:
