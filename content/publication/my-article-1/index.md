@@ -3,17 +3,17 @@
 
 title: "Confidence judgments during ratio comparisons reveal a Bayesian bias"
 authors: [Santiago Alonso-Diaz, Jessica Cantlon]
-date: 2020-10-03T19:51:11-05:00
+date: 2018-04-04T19:51:11-05:00
 doi: "https://doi.org/10.1016/j.cognition.2018.04.006"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2018-04-04T19:51:11-05:00
+publishDate: 2020-10-03T19:51:11-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
 publication: "Cognition"
@@ -33,7 +33,7 @@ of the fraction‘s components, consistent with a Bayesian perception of relativ
 large number bias could arise from greater confidence in large samples."
 
 # Summary. An optional shortened abstract.
-summary: ""
+summary: "Fractions with large cardinalities increase confidence"
 
 tags: []
 categories: []
