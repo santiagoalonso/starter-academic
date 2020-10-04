@@ -4,7 +4,7 @@
 title: "Model Name"
 subtitle: ""
 summary: ""
-authors: []
+authors: [Author 1, Author 2]
 tags: []
 categories: []
 date: 2020-10-03T08:51:25-05:00
@@ -27,3 +27,9 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+
+# Diagram
+```mermaid
+graph TD
+A --> B
+```
