@@ -1,5 +1,5 @@
 ---
-title: Publicationso
+title: oPublications
 
 # View.
 #   1 = List
