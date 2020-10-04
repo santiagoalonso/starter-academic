@@ -1,10 +1,10 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "My Article 1"
-authors: []
+title: "Confidence judgments during ratio comparisons reveal a Bayesian bias"
+authors: [Santiago Alonso-Diaz, Jessica Cantlon]
 date: 2020-10-03T19:51:11-05:00
-doi: ""
+doi: "https://doi.org/10.1016/j.cognition.2018.04.006"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2020-10-03T19:51:11-05:00
@@ -16,10 +16,21 @@ publishDate: 2020-10-03T19:51:11-05:00
 publication_types: ["0"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "Cognition"
 publication_short: ""
 
-abstract: ""
+abstract: "Rational numbers are essential in mathematics and decision-making but humans often and erroneously rely on
+the magnitude of the numerator or denominator to determine the relative size of a quotient. The source of this
+flawed whole number strategy is poorly understood. Here we test the Bayesian hypothesis that the human bias
+toward large values in the numerator or denominator of a ratio estimate is the result of higher confidence in
+large samples. Larger values are considered a better (more certain) instance of that ratio than the same ratio
+composed of smaller values. We collected confidence measures explicitly (Experiment 1) and implicitly
+(Experiment 2) during subjects’ comparisons of non-symbolic proportions (images with arrays of orange and
+blue dots). We manipulated the discernibility of the fractions to control difficulty and varied the cardinality and
+congruency of the numerators, denominators, and ratio values (e.g. 8/20 vs. 5/10 and 16/40 vs. 10/20). The
+results revealed that subjects’ confidence during ratio comparisons was modulated by the numerical magnitude
+of the fraction‘s components, consistent with a Bayesian perception of relative ratios. The results suggest that the
+large number bias could arise from greater confidence in large samples."
 
 # Summary. An optional shortened abstract.
 summary: ""
