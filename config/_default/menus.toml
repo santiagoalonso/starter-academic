@@ -13,6 +13,11 @@
   url = "#posts"
   weight = 20
 
+[[main]]
+  name = "Cog. Models Compendium"
+  url = "#cogmodels"
+  weight = 30
+
 # [[main]]
 #  name = "Projects"
 #  url = "#projects"
