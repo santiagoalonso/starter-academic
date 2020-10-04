@@ -16,7 +16,7 @@ publishDate: 2020-10-03T19:51:11-05:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Proceedings of the 41th Annual Meeting of the Cognitive Science Society."
+publication: "Proceedings of the 41th Annual Meeting of the Cognitive Science Society"
 publication_short: ""
 
 abstract: "Inversion is an essential operation, for instance in math (negatives) and action (to move in an opposite direction). Eventhough humans can invert is unclear how is implemented. There are two alternative hypotheses. The first possibility (H1)is that only positives are represented and negatives (inverses) are implemented as either a response (e.g. left to right) ortask demand flip (e.g. ¿ to ¡). The second possibility (H2) is that both positives and negatives (inverses) are encoded.To disambiguate them, we ran two experiments where participants had to apply the inverse while implicitly reportingconfidence. If inverting modifies encoding of otherwise identical stimulation then confidence should differ. We found thatconfidence was lower in inverse trials than direct/positive trials. This suggests that the inverse is not a simple responsestrategy or modification of task demands (H1), rather inverting modulates how cognitive information is encoded and usedin the brain (H2)."

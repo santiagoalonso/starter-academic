@@ -16,7 +16,7 @@ publishDate: 2020-10-03T19:51:11-05:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Proceedings of the 41th Annual Meeting of the Cognitive Science Society."
+publication: "Proceedings of the 41th Annual Meeting of the Cognitive Science Society"
 publication_short: ""
 
 abstract: "Numerosity is informative for living organisms. It can transmit, among many things, amount of food available, heading direction of the troop, which group could win a

@@ -16,7 +16,7 @@ publishDate: 2020-10-03T19:51:11-05:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Proceedings of the 41th Annual Meeting of the Cognitive Science Society."
+publication: "Proceedings of the 41th Annual Meeting of the Cognitive Science Society"
 publication_short: ""
 
 abstract: "Probabilities can be described by a numerator and a denominator and students and decision-makers are not indifferent to numerical values of the components. For instance, when people compare two equal ratios their choices gravitate to the option with larger number, even if they know both ratios are equal. To the date, however, it is unclear if whole number biases are present in other cultures. We tested a farming-foraging group living in the Bolivian rain forest in a simple 2AFC ratio comparison task. After appropriate training, the Tsimane were highly accurate in this task, confirming that visual proportional reasoning is present across cultures. Importantly, they had a strong tendency to favor large numbers in equal ratio comparisons, similar to what is found in educated populations. Even though our sample size is moderate (n=76), the whole number bias we found occurred under good proportional reasoning. The bias may be a general feature of cognition, rather than a cultural or education artifact, that may help humans solve ambiguous situations."

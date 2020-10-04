@@ -16,8 +16,8 @@ publishDate: 2020-10-03T19:51:11-05:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Proceedings of the 39th Annual Meeting of the Cognitive Science Society."
-publication_short: "CogSci 2017"
+publication: "Proceedings of the 39th Annual Meeting of the Cognitive Science Society"
+publication_short: ""
 
 abstract: "Languages commonly use physical properties to discuss dis-tinctly non-physical states and events in the world (e.g., “I’mnot ahugefan of licorice”).  Here, we investigate the degreeto which associations between physical properties and abstractconcepts  are  culturally  specific  constructs.    To  do  this,  wetested three distinct populations—US adults, US children, andadults from an indigenous group in the lowlands of Bolivia, theTsimane’—on their associations between the physical conceptof weight and a variety of abstract attributes (e.g., importance,emotional state, moral worth).  We find a strong relationshipbetween the associations of US and Tsimane’ adults, but little-to-no relationship between US children and either adult popu-lation.  These results suggest that the property of weight playsa similar role in everyday thought across cultures, but that ittakes time to develop. Further, we found that these associationscould  not  be  recovered  from  a  simple  semantic  embeddinganalysis,  suggesting  that  the  cross-culturally  shared  connec-tions between physical and abstract attributes may be learnedthrough more complex experiences than language alone"
 
