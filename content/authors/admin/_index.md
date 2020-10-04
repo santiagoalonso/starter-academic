@@ -21,7 +21,7 @@ organizations:
 bio: My research interests include math cognition, bayesian cognition.
 
 interests:
-- Math cognitionnn
+- Math cognition
 - Confidence
 - Behavioral and Neuroeconomics
 
