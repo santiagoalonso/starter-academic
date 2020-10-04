@@ -60,6 +60,21 @@ two --> c2
 	    A & B--> C & D
 ```
 
+# Diagram 4
+```mermaid
+	graph LR
+	   a --> b & c--> d
+```
+
+# Charts
+
+```mermaid
+	pie title Choices
+	"Risky": 50
+	"Save": 40
+	"Indifferent": 10
+```
+
 # Python Code
 
 ```python
