@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Economía material\: cuerpo y cerebro"
+title: "Economía material : cuerpo y cerebro"
 authors: [Santiago Alonso-Díaz]
 date: 2012-10-09T20:09:23-05:00
 doi: ""
