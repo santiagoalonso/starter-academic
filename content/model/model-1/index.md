@@ -52,3 +52,9 @@ one --> two
 three --> two
 two --> c2
 ```
+
+
+```python
+for i in range(8):
+	print(i)
+```
