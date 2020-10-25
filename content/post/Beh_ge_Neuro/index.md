@@ -28,7 +28,7 @@ image:
 projects: []
 ---
 
-# Español (English below)
+# Español ( English below )
 
 En una [reflexión](https://psyarxiv.com/y8mxe/) interesante, Yael Niv, profesora del Instituto de Neurociencia y del Departamento de Psicología de Princeton, argumenta que la primacia de medidas neuronales (e.g. fMRI) en las agencias que financian investigaciones, y en el imaginario de los ciudadanos, para entender qué hace el cerebro es una creencia injustificada. La creencia de que que *neuronas > comportamiento* es equivocada.  Para la profesora Niv, a la pregunta *¿qué hace el cerebro?* la relación es al revés: *comportamiento > neuronas*. Claramente, no aplica para *¿cómo lo hace?* donde es claro que hay que estudiar el cerebro.
 
