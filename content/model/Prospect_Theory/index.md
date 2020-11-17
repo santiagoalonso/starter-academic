@@ -43,7 +43,7 @@ Las formulas de estas gráficas son:
 Valor:
 
 $$
-\alpha \; \& \; \beta \; \text{miden actitudes de riesgo}
+\alpha, \; \beta \; \text{miden actitudes de riesgo}
 $$
 
 
