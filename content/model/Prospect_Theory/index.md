@@ -80,12 +80,22 @@ $$
 
 En suma, son 6 parámetros a estimar
 $$
-\alpha ,\; \beta \;\text{actitudes al riesgo} \\\\ 
-\lambda \; \text{aversion perdidas} \\\\ \gamma \;, \delta \; \text{percepcion de probabilidad} \\\\ \phi \text{ temperatura}
+\alpha ,\; \beta \;\text{actitudes al riesgo} 
 $$
 
+$$
+\lambda \; \text{aversion perdidas} 
+$$
 
-La versión de prospect theory propuesta por Nilsson, et al (2011) es jerárquica (ver diagrama abajo) e invitó al lector a leer su paper para mayores detalles. En general, al hacer una versión jerárquica se aprovecha la información de todos los sujetos para obtener mayor precisión en la estimación de los parámetros por sujeto.
+$$
+\gamma \;, \delta \; \text{percepcion de probabilidad} 
+$$
+
+$$
+\phi \text{ temperatura}
+$$
+
+La versión de prospect theory propuesta por Nilsson, et al (2011) es jerárquica (ver diagrama abajo). Leer su paper para mayores detalles. En general, al hacer una versión jerárquica se aprovecha la información de todos los sujetos para obtener mayor precisión en la estimación de los parámetros por sujeto.
 
 <center><img src="model_CPT.svg" width = "600" height = '600'></center>
 
