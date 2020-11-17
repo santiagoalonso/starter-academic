@@ -60,7 +60,7 @@ w(p_x) = \frac{p_x^c}{(p_x^c - (1-p_x^c))^{1/c}}
 $$
 
 $$
-c = \gamma \text{, si ganancia, } c = \delta \text{, si perdida. Determinan w(p)}
+c = \gamma \text{, si ganancia, } c = \delta \text{, si perdida.}
 $$
 
 
@@ -75,12 +75,12 @@ p(A) = \frac{1}{1+e^{\phi(V(B)-V(A))}}
 $$
 
 $$
-\phi \; \text{determina lo importante que es la diferencia de valor para escoger A (o B)}
+\phi \; \text{importancia del valor para escoger A (o B)}
 $$
 
 En suma, son 6 parámetros a estimar
 $$
-\alpha ,\; \beta \;\text{actitudes al riesgo}, \lambda \; \text{aversion perdidas}, \gamma \;, \delta \; \text{percepción de probabilidad}, \phi
+\alpha ,\; \beta \;\text{actitudes al riesgo} \\\ \lambda \; \text{aversion perdidas} \\\ \gamma \;, \delta \; \text{percepcion de probabilidad} \\\ \phi \text{ temperatura}
 $$
 
 
