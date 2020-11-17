@@ -80,15 +80,15 @@ $$
 
 En suma, son 6 parámetros a estimar
 $$
-\alpha ,\; \beta \;\text{actitudes al riesgo} 
+\alpha, \beta \text{ actitudes al riesgo}
 $$
 
 $$
-\lambda \; \text{aversion perdidas} 
+\lambda \text{ aversion perdidas}
 $$
 
 $$
-\gamma \;, \delta \; \text{percepcion de probabilidad} 
+\gamma, \delta \text{ percepcion de probabilidad}
 $$
 
 $$
