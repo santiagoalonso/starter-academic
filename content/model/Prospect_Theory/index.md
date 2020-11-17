@@ -60,7 +60,7 @@ w(p_x) = \frac{p_x^c}{(p_x^c - (1-p_x^c))^{1/c}}
 $$
 
 $$
-c = \gamma \text{ si ganancia, } c = \delta \text{ si perdida. Determinan la forma de w(p)}
+c = \gamma \text{, si ganancia, } c = \delta \text{, si perdida. Determinan w(p)}
 $$
 
 
