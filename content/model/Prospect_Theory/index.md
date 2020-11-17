@@ -80,7 +80,8 @@ $$
 
 En suma, son 6 parámetros a estimar
 $$
-\alpha ,\; \beta \;\text{actitudes al riesgo} \\\\ \lambda \; \text{aversion perdidas} \\\\ \gamma \;, \delta \; \text{percepcion de probabilidad} \\\\ \phi \text{ temperatura}
+\alpha ,\; \beta \;\text{actitudes al riesgo} \\\\ 
+\lambda \; \text{aversion perdidas} \\\\ \gamma \;, \delta \; \text{percepcion de probabilidad} \\\\ \phi \text{ temperatura}
 $$
 
 
