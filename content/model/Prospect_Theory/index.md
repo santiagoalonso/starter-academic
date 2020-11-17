@@ -41,6 +41,14 @@ Una de las teorías más conocidas en economía del comportamiento es prospect t
 Las formulas de estas gráficas son:
 
 Valor:
+$$
+v(x) = \left \{
+\begin{aligned}
+    x^\alpha \\; \;\; \; &\text{if} \;\; x\ge 0 \\
+   -\lambda(-x^\beta)\; \;\; \; & \text{if} \;\;  x< 0
+\end{aligned}
+\right.
+$$
 
 $$
 \alpha, \; \beta \; \text{miden actitudes de riesgo}
