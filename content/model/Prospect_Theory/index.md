@@ -43,12 +43,14 @@ Las formulas de estas gráficas son:
 Valor:
 
 $$
-v(x) = \left\{
-\begin{aligned}
-    x^\alpha \; \;\; \; &\text{if} \;\; x\ge 0 \\
-   -\lambda(-x^\beta)\; \;\; \; & \text{if} \;\;  x< 0
-\end{aligned}
-\right.
+ 
+f(a,b) = 
+     \begin{cases}
+       \text{open,} &\quad\text{if RMSD}_\text{s-open}\ge6, \text{RMSD}_\text{closed}\ge6\\
+       \text{closed,} &\quad\text{if RMSD}_\text{closed}\le2 \\
+       \text{semiopen,} &\quad\text{if RMSD}_\text{s-open}\le2\\
+       \text{transition,} &\quad\text{otherwise.} \\ 
+     \end{cases}
 $$
 
 $$
@@ -95,7 +97,7 @@ La versión de prospect theory propuesta por Nilsson, et al (2011) es jerárquic
 
 # Python Code
 
-El material de Nilsson et al (2011) y mi implementación en PyMC3 también se pueden encontrar en este [link](https://github.com/santiagoalonso/Cognitive-models/tree/master/Prospect%20Theory)
+El material de Nilsson et al (2011), los datos necesarios, y mi implementación en PyMC3 también se pueden encontrar en este [link](https://github.com/santiagoalonso/Cognitive-models/tree/master/Prospect%20Theory)
 
 ```python
 #Libraries and functions
