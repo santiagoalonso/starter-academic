@@ -42,12 +42,7 @@ Las formulas de estas gráficas son:
 
 Valor:
 $$
-v(x) = \left \{
-\begin{aligned}
-    x^\alpha \\; \;\; \; &\text{if} \;\; x\ge 0 \\
-   -\lambda(-x^\beta)\; \;\; \; & \text{if} \;\;  x< 0
-\end{aligned}
-\right.
+f(x)=\begin{cases}1 & x\in\mathbb{Q}\\ 0 & x\notin\mathbb{Q} \\ \end{cases}
 $$
 
 $$
