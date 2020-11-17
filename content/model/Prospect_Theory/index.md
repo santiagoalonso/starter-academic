@@ -44,13 +44,13 @@ Valor:
 $$
 f(x)=
 \begin{cases}
-14 & x\in\mathbb{Q} \\\ 
-0 & x\notin\mathbb{Q} \\ 
+x^\alpha & x\ge0 \\\ 
+-\lambda(-x^\beta) & x<0 
 \end{cases}
 $$
 
 $$
-\alpha, \; \beta \; \text{miden actitudes de riesgo}
+\alpha, \\; \beta \\; \text{miden actitudes de riesgo}
 $$
 
 
