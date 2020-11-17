@@ -44,7 +44,7 @@ Valor:
 $$
 f(x)=
 \begin{cases}
-1 & x\in\mathbb{Q} \\ 
+14 & x\in\mathbb{Q} \\\ 
 0 & x\notin\mathbb{Q} \\ 
 \end{cases}
 $$
