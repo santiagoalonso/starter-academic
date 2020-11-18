@@ -103,7 +103,7 @@ La versión de prospect theory propuesta por Nilsson, et al (2011) es jerárquic
 
 # Python Code
 
-El material de Nilsson et al (2011), los datos necesarios, y mi implementación en PyMC3 también se pueden encontrar en este [link](https://github.com/santiagoalonso/Cognitive-models/tree/master/Prospect%20Theory)
+El material de Nilsson et al (2011), los datos necesarios, y la implementación en PyMC3 también se pueden encontrar en este [link](https://github.com/santiagoalonso/Cognitive-models/tree/master/Prospect%20Theory)
 
 ```python
 #Libraries and functions
