@@ -4,7 +4,7 @@
 title: "Cumulative Prospect Theory (PyMC3)"
 subtitle: "Based on Nilsson, Rieskamp, Wagenmakers, 2011"
 summary: ""
-authors: [Author 1, Author 2]
+authors: [Santiago Alonso-Díaz]
 tags: []
 categories: []
 date: 2020-10-03T08:51:25-05:00
