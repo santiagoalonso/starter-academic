@@ -42,7 +42,7 @@ Las formulas de estas gráficas son:
 
 Valor:
 $$
-f(x)=
+v(x)=
 \begin{cases}
 x^\alpha & x\ge0 \\\ 
 -\lambda(-x^\beta) & x<0 
@@ -101,9 +101,80 @@ La versión de prospect theory propuesta por Nilsson, et al (2011) es jerárquic
 
 
 
-# Python Code
+# English (by Google Translate with some edits)
 
-El material de Nilsson et al (2011), los datos necesarios, y la implementación en PyMC3 también se pueden encontrar en este [link](https://github.com/santiagoalonso/Cognitive-models/tree/master/Prospect%20Theory)
+This post has at the end the PyMC3 code for the Bayesian estimation of prospect theory parameters (adapted from the winbugs version of [Nilsson, et al, 2011](https://www.researchgate.net/publication/222825338_Hierarchical_Bayesian_parameter_estimation_for_cumulative_prospect_theory)).
+
+One of the best known theories in behavioral economics is prospect theory. It is a traditional theory of expected value (V) where the agent combines value and probability (V = vp) to decide. The value (v) and the probability (p) that is observed is transformed / perceived in a non-linear way and are judged from a reference. The image below shows the two proposed functions in prospect theory (dotted lines).
+
+<center><img src="PT.png" width = "420" height = '250'></center>
+
+The formulas are:
+
+Value:
+$$
+v(x)=
+\begin{cases}
+x^\alpha & x\ge0 \\\ 
+-\lambda(-x^\beta) & x<0 
+\end{cases}
+$$
+
+$$
+\alpha, \\; \beta \\; \text{risk attitudes}
+$$
+
+
+Probabilities:
+$$
+w(p_x) = \frac{p_x^c}{(p_x^c - (1-p_x^c))^{1/c}}
+$$
+
+$$
+c = \gamma \text{, if gain, } c = \delta \text{, if loss.}
+$$
+
+
+
+The agent decides based on expected value (V).
+$$
+V(x) = v(x)w(p_x)
+$$
+For instance, Nilsson, et al (2011) used an stochastic choice rule between the expected value of the options A and B
+$$
+p(A) = \frac{1}{1+e^{\phi(V(B)-V(A))}}
+$$
+
+$$
+\phi \; \text{relevance of V to pick A (o B)}
+$$
+
+In brief, there are 6 parameters
+$$
+\alpha, \beta \text{ risk attitudes}
+$$
+
+$$
+\lambda \text{ loss aversion}
+$$
+
+$$
+\gamma, \delta \text{ probability perception}
+$$
+
+$$
+\phi \text{ temperature}
+$$
+
+Nilsson, et al (2011) propose a hierarchical version of prospect theory (diagram below). Details in their paper. In general, when making a hierarchical version, the information from all the subjects is used to obtain greater precision in the estimation of the parameters per subject.
+
+<center><img src="model_CPT.svg" width = "600" height = '600'></center>
+
+# Python
+
+El material de Nilsson et al (2011), los datos necesarios, y la implementación en PyMC3 también se pueden encontrar en este [link](https://github.com/santiagoalonso/Cognitive-models/tree/master/Prospect%20Theory). 
+
+The material from Nilsson et al (2011), the necessary data, and the implementation in PyMC3 can also be found in this [link](https://github.com/santiagoalonso/Cognitive-models/tree/master/Prospect%20Theory). 
 
 ```python
 #Libraries and functions
@@ -387,6 +458,8 @@ with pm.Model() as CPT:
 
 
 
-## References:
+## Referencias:
 
 Nilsson, H., Rieskamp, J., & Wagenmakers, E. J. (2011). Hierarchical Bayesian parameter estimation for cumulative prospect theory. *Journal of Mathematical Psychology*, *55*(1), 84-93
+
+# 
