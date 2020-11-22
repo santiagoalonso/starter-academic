@@ -4,7 +4,7 @@
 title: "Confidence and response times"
 subtitle: ""
 summary: ""
-authors: []
+authors: [Santiago Alonso-Díaz]
 tags: []
 categories: []
 date: 2020-10-03T08:51:25-05:00
