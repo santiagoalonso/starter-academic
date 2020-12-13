@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Confidence and Likert-type scales"
+title: "Confidence and Likert-type scales in economics"
 subtitle: ""
 summary: ""
 authors: [Santiago Alonso-Díaz]
