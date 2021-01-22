@@ -4,7 +4,7 @@
 title: "The numerator bias exists in millions of real-world comparisons"
 authors: [Santiago Alonso-Diaz, Jessica Cantlon, Steven Piantadosi]
 date: 2021-02-01T19:51:11-05:00
-doi: "x"
+doi: "https://doi.org/10.1016/j.actpsy.2020.103248"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2021-01-21T19:51:11-05:00
@@ -36,7 +36,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: "https://cogsci.mindmodeling.org/2019/papers/0243/0243.pdf"
+url_pdf: "https://reader.elsevier.com/reader/sd/pii/S0001691820305722?token=18E06A71DBE20C45A317718CAA5D9B3E915AB03651BB111A93480EF2CEBC84F19B74102B5AE6AA9161264461FA690701"
 url_code:
 url_dataset:
 url_poster:
