@@ -1,14 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "No free lunch theorem & number cognition"
+title: "Fractals and fraction cognition"
 subtitle: ""
 summary: ""
 authors: []
 tags: []
 categories: []
-date: 2020-10-03T08:51:25-05:00
-lastmod: 2020-10-03T08:51:25-05:00
+date: 2021-01-30T08:51:25-05:00
+lastmod: 2021-01-30T08:51:25-05:00
 featured: false
 draft: false
 
@@ -30,54 +30,38 @@ projects: []
 
 # Español (English below; by Google translate)
 
-Hace poco me enteré de un teorema en ciencias computacionales llamado el no free lunch theorem (Wolpert, quien lo demostró lo explica intuitivamente en esta [entrevista](https://complexity.simplecast.com/episodes/45). En palabras de Wolpert: "... si el algoritmo A es mejor al B en algunas funciones de costo, entonces de alguna forma debe existir otras funciones de costo donde el algoritmo B es mejor ... " Wolpert and Macready (1995) (traducción propia). 
 
-En esta nota extiendo la idea de que esto es relevante para ciencia cognitiva de numéros. 
 
-Pero primero, un ejemplo de Wikipedia que me pareció bueno para generar una intuición del no free lunch theorem (de ahora en adelante NFL). Imagine un universo con dos resultados posibles (cuadrado y triangulo) y que solo ha durado dos días:
-
-1. (cuadrado, triangulo): el universo es cuadrado en día 1 y triangulo en día 2
-2. (cuadrado, cuadrado)
-3. (triangulo, triangulo)
-4. (triangulo, triangulo)
-
-Un algoritmo A que prediga cuadrado si ocurrió cuadrado, en la historía 2 será mejor que uno B que prediga triangulo. Sin embargo, si las historias 1 a 4 son igual de probables ambos algoritmos son iguales de buenos en promedio (e.g. el algoritmo B es mejor en la historia 1).  
-
-El NFL ha intrigado y generado acalorados debates en la comunidad de machine learning e inteligencia artificial por sus implicaciones en el esfuerzo por encontrar los mejores algoritmos. 
-
-En cognición numérica, mi área de experticia, hasta donde sé, no hay discusiones al respecto. En general, hay dos visiones sobre las capacidades algorítmicas del cerebro y animales (incluyendo humanos) para representar numéros. Para aclarar, me centró en numerosidad como propiedad de la realidad. Por ejemplo, 3 nueces o 22 pájaros. 
-
-* [Algoritmo](http://dx.doi.org/10.1016/j.actpsy.2016.09.003) A: usar características sensoriales para estimar numerosidad. 
-* [Algoritmo](https://doi.org/10.1162/jocn.1993.5.4.390) B: normalizar características sensoriales y estimar numerosidad abstracta.
-
-¿Suenan parecidos? La diferencia clave es que algoritmo A considera que el cerebro no representa numéros en abstracto, simplemente usa propiedades sensoriales como área cubierta o densidad de las 3 nueces o los 22 pajaros. Si un animal parece actuar sobre los numéros, es simplemente eso, *parece actuar sobre numéros* pero simplemente usa propiedades sensoriales, no usa numéros. En cambio, el algoritmo B, aunque también puede que use input sensorial, de alguna forma logra abstraerlas para llegar a un estimativo abstracto de numéro. Es decir, el animal en efecto *actua sobre numéros*. 
-
-Los debates entre ambos bandos, aquellos que defienden algoritmo A vs algoritmo B, son intensos y los papers en journals usualmente tratan de ver cuál predice mejor el comportamiento. Sin embargo, luego de leer sobre el NFL propongo que la discusión es estéril. Mi intuición cientifíca me sugiere que es demostrable que ambos algorítmos en promedio son igual de buenos, tal como indica NFL. 
+<center><img src="fractals_in_life.png" width = "470" height = '470'></center>
 
 
 
-# English (by Google translate)
+Muchos patrones en la vida tienen estructuras que se repiten. Se asemejan a procesos fractales donde las proporciones se asemejan a diferentes escalas. Esta propiedad fue parte de la inspiración de un [paper reciente](https://www.sciencedirect.com/science/article/pii/S0001691820305722) que escribimos con un colega sobre una ilusión cognitiva que aparece en adultos y niños, independiente del nivel y tipo de educación (incluso matemáticos de alto nivel): el whole-number bias. Propusimos que si hay independencia entre el valor del denominador y el del ratio, entonces en un par aleatorio de fracciones la de mayor valor va a ser la que tiene el mayor numerador con una alta probabilidad. El estimativo empirico fue alrededor de 0.8. Sugerimos que la independencia entre la magnitud del denominador y el valor del ratio no es una simple curiosidad matemática sino que puede ocurrir seguido en la naturaleza como lo son los fractales. En esta entrada muestro el caso de un fractal clásico: el triangulo de Sierpinski (ver imagen abajo).  
 
-I recently learned of a theorem in computer science called the no free lunch theorem (Wolpert, who proved it, explains it intuitively in this [interview](https://complexity.simplecast.com/episodes/45). In Wolpert's words : "... if algorithm A is better than B in some cost functions, then somehow there must be other cost functions where algorithm B is better ..." Wolpert and Macready (1995) (own translation).
+<center><img src="Sierpinski.svg" width = "781" height = '516'></center>
 
-In this note I extend the idea that this is relevant to cognitive science of numbers.
+Tomé distintas iteraciones aleatorias del triangulo y calcule el ratio del area sin sombra sobre el area con sombra ([codigo R](https://github.com/santiagoalonso/starter-academic/blob/master/content/post/Fractals_Whole_Number_Bias/SimsPlot.R)). Luego compare para dos valores de ese ratio cuál era el mayor y conté cuantas veces tenía el numerador y denominador mayor (NLDL), numerador y denominador menor (NSDS), y numerador mayor y denominador menor (NLDS) (N: numerator, D: denominator, L: larger, S: smaller). No hay más casos pues valores iguales en numerador y denominador en ambas fracciones son poco probables. La imagén de abajo muestra dos cosas interesantes. Primero, para distintos valores de ratio aparecían denominadores en todo el rango (paneles superiores). Es decir, los valores de ratio eran independientes del denominador i.e. por definición, los fractales son auto-semejantes a cualquier escala (denominador). Segundo, el ratio mayor tiene muchas veces numeradores altos: NLDL + NLDS es aproximadamente 0.82. 
 
-But first, an example from Wikipedia that seemed good to me to generate an intuition of the no free lunch theorem (from now on NFL). Imagine a universe with two possible outcomes (square and triangle) that only lasted two days:
+<center><img src="Sierpinsky_fractions.svg" width = "781" height = '516'></center>
 
-1. (square, triangle): the universe is square on day 1 and triangle on day 2
-2. (square, square)
-3. (triangle, triangle)
-4. (triangle, triangle)
+En un mundo fractal tiene sentido tener un whole-number bias via el numerador. Esto afecta no solo a los estudiantes que aprenden fracciones, también a organismos que toman decisiones reales pues cantidades relativas abundan en la realidad (e.g. probabilidades, Weber fractions, normalización neuronal, etc)
 
-An algorithm A that predicts square if square occurred, in history 2 will be better than one B that predicts triangle. However, if stories 1 to 4 are equally likely both algorithms are equally good on average (e.g. algorithm B is better on story 1).
 
-The NFL has intrigued and sparked heated debates in the machine learning and artificial intelligence community for its implications in the effort to find the best algorithms.
 
-In numerical cognition, my area of expertise, as far as I know, there are no discussions about it. In general, there are two views on the algorithmic abilities of the brain and animals (including humans) to represent numbers. To clarify, I focused on numerousness as a property of reality. For example, 3 nuts or 22 birds.
+# English (by Google translate with minor edits)
 
-* [Algorithm]( http://dx.doi.org/10.1016/j.actpsy.2016.09.003) A: use sensory characteristics to estimate numbers.
-* [Algorithm](https://doi.org/10.1162/jocn.1993.5.4.390) B: normalize sensory characteristics and estimate abstract numbers.
 
-Sound alike? The key difference is that algorithm A considers that the brain does not represent numbers in the abstract, it simply uses sensory properties such as covered area or density of the 3 nuts or the 22 birds. If an animal appears to act on numbers, it is just that, *it appears to act on numbers* but it just uses sensory properties, it doesn't use numbers. In contrast, algorithm B, although it may also use sensory input, somehow manages to abstract them to arrive at an abstract number estimate. That is, the animal actually *acts on numbers*.
 
-The debates between both sides, those who defend algorithm A vs algorithm B, are intense and the papers in journals usually try to see which one best predicts behavior. However, after reading about the NFL I propose that the discussion is sterile. My scientific intuition suggests that it is demonstrable that both algorithms are equally good on average, as indicated by the NFL.
+<center><img src="fractals_in_life.png" width = "470" height = '470'></center>
+
+
+
+Many patterns in life have repeating structures. They resemble fractal processes where the proportions resemble at different scales. This property was part of the inspiration for a [recent paper](https://www.sciencedirect.com/science/article/pii/S0001691820305722) that we wrote with a colleague about a cognitive illusion that appears in adults and children, regardless of the level and type of education (including high-level mathematicians): the whole-number bias. We proposed that if there is independence between the value of the denominator and that of the ratio, then in a random pair of fractions the one with the highest value will be the one with the highest numerator with a high probability. The empirical estimate was around 0.8. We suggested that the independence between the magnitude of the denominator and the value of the ratio is not a simple mathematical curiosity but can occur often in nature e.g. in fractals. In this post I show the case of a classic fractal: the Sierpinski triangle (see image below).
+
+<center><img src="Sierpinski.svg" width = "781" height = '516'></center>
+
+I took different random iterations of the triangle and calculated the ratio of the unshaded area over the shaded area ([R code](https://github.com/santiagoalonso/starter-academic/blob/master/content/post/Fractals_Whole_Number_Bias/SimsPlot .R)). Then, I compared for two values of that ratio which was the greater and counted how many times had the larger numerator and denominator (NLDL), smaller numerator and denominator (NSDS), and larger numerator and smaller denominator (NLDS) (N: numerator, D: denominator, L: larger, S: smaller). There are no more cases since equal values in numerator and denominator in both fractions are unlikely. The image below shows two interesting things. First, for different ratio values, denominators appeared throughout the range (upper panels). That is, the ratio values were independent of the denominator i.e. by definition, fractals are self-similar at any scale (denominator). Second, higher ratios have many times higher numerators: NLDL + NLDS is approximately 0.82.
+
+<center><img src="Sierpinsky_fractions.svg" width = "781" height = '516'></center>
+
+In a fractal world it makes sense to have a whole-number bias via the numerator. This affects not only students who learn fractions, but also organisms that make real decisions since relative quantities abound in reality (e.g. probabilities, Weber fractions, neural normalization, etc.)
