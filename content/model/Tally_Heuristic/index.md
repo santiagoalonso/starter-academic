@@ -34,10 +34,10 @@ Esta entrada tiene al final el código en PyMC3 para la estimación Bayesiana de
 
 Un teoría influyente sobre toma de decisiones es que los humanos usamos heurísticas, es decir, atajos para escoger entre opciones. Una heurística famosa es tallying. Parpart, et al, 2018 ponen un ejemplo intuitivo usando dos equipos de futbol. Si a usted le preguntan qué equipo va a ganar, Barcelona vs Atlético de Madrid, su respuesta con certeza se va a basar en características de cada equipo (no es fan de ninguno). Digamos que utiliza cuatro: a) posición en la liga, b) resultado del último partido, c) local o visitante y d) número de goles. Si usted fuera una inteligencia artificial, depronto usaría una regresión para determinar la importancia de cada característica usando data histórica. Sin embargo, la teoría de heurísticas afirma que las personas usamos estrategias más simples. En este caso, tallying se refiere a darle igual peso a todas las características, sumar, y escoger el que tenga mayor valor.
 $$
-Barcelona = Posicion\_liga(20-3) + Ultimo\_resultado(0) + local(0) + goles(44) \\
-Atletico \ Madrid = Posicion\_liga(20-0) + Ultimo\_resultado(0) + local(1) + goles(38)
+Barcelona = Posicion(20-3) + Ultimo(0) + Local(0) + Goles(44) \\
+Atletico = Posicion(20-0) + Ultimo(0) + Local(1) + Goles(38)
 $$
-En este ejemplo, Barcelona suma 61 y Atlético Madrid 59. Por lo tanto, la persona dice que Barcelona gana. Lo clave es notar que en tallying todas las características tienen un peso idéntico en la decisión. 
+En este ejemplo, Barcelona suma 61 y Atlético Madrid 59 (dentro de los paréntesis están los valores). Por lo tanto, la persona dice que Barcelona gana. Lo clave es notar que en tallying todas las características tienen un peso idéntico en la decisión. 
 
 Gerd Gigerenzer y colegas han dedicado buena parte de su vida académica a demostrar que este tipo de estrategias no solo son fáciles para la mente humana sino que también pueden ser óptimas. Un principio importante que han derivado es el de menos información es mejor (less-is-more). En el caso de tallying, la información de cuanto ponderar cada característica no se necesita pues es más flexible no poner pesos (i.e. bias-variance trade-off favorece a variance en muchos contextos de decisiones). 
 
@@ -63,9 +63,10 @@ An influential theory about decision making is that humans use heuristics, that 
 
 
 $$
-Barcelona = League\_position(20-3) + Last\_game\_result(0) + local(0) + goals(44) \\Atletico \ Madrid = League\_position(20-0) + Last\_game\_result(0) + local(1) + goals(38)
+Barcelona = Position(20-3) + Last(0) + Local(0) + Goals(44) \\ 
+Atletico  = Position(20-0) + Last(0) + Local(1) + Goals(38)
 $$
-In this example, Barcelona adds 61 and Atlético Madrid 59. Therefore, the person says that Barcelona wins. The key is to note that in tallying all the characteristics have an identical weight in the decision.
+In this example, Barcelona adds 61 and Atlético Madrid 59 (values inside parentheses). Therefore, the person says that Barcelona wins. The key is to note that in tallying all the characteristics have an identical weight in the decision.
 
 Gerd Gigerenzer and colleagues have spent much of their academic life demonstrating that these types of strategies are not only easy for the human mind but can also be optimal. An important principle that they have derived is that less information is better (less-is-more). In the case of tallying, the information on how much to weight each characteristic is not needed since it is more flexible not to put weights (i.e. bias-variance trade-off favors variance in many decision contexts).
 
