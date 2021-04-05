@@ -66,12 +66,14 @@ Lo impactante del paper de Paula Parpart y colegas es que nos permite entender m
 This entry has at the end the code in PyMC3 for the Bayesian estimation of the parameters of the tallying heuristic. Specifically, the weights of the cues and the strength of the prior penalizing the use of all the information (adapted from the R version of [Parpart, et al, 2018](https://www.sciencedirect.com/science/article/pii/S0010028517303286)). Here is a succinct explanation of the heuristics and an interesting result from Parpart, et al, 2018.
 
 An influential theory about decision making is that humans use heuristics, that is, shortcuts to choose between options. A famous heuristic is tallying. Parpart, et al, 2018 give an intuitive example using two soccer teams. If you are asked which team is going to win, Barcelona vs Atlético de Madrid, your answer will certainly be based on the characteristics of each team (you are not a fan of either). Let's say you use four: a) league position, b) last game result, c) home or away, and d) number of goals. If you were an artificial intelligence, you would use a regression to determine the importance of each characteristic using historical data. However, the theory of heuristics states that people use simpler strategies. In this case, tallying refers to giving equal weight to all the characteristics, adding, and choosing the one with the highest value.
-
+$$
+Barcelona = Pos(20-3) + Last(0) + Local(0) + Goals(44)
+$$
 
 $$
-Barcelona = Pos(20-3) + Last(0) + Local(0) + Goals(44) \\\\ 
 Atletico  = Pos(20-0) + Last(0) + Local(1) + Goals(38)
 $$
+
 In this example, Barcelona adds 61 and Atlético Madrid 59 (values inside parentheses). Therefore, the person says that Barcelona wins. The key is to note that in tallying all the characteristics have an identical weight in the decision.
 
 Gerd Gigerenzer and colleagues have spent much of their academic life demonstrating that these types of strategies are not only easy for the human mind but can also be optimal. An important principle that they have derived is that less information is better (less-is-more). In the case of tallying, the information on how much to weight each characteristic is not needed since it is more flexible not to put weights (i.e. bias-variance trade-off favors variance in many decision contexts).
@@ -79,8 +81,6 @@ Gerd Gigerenzer and colleagues have spent much of their academic life demonstrat
 One way to think about the less-is-more principle is with a pencil vs color drawing activity. Painting with colors can be closer to reality, but they are difficult to erase. On the other hand, with pencil one limits to expressing in black and white but there is more flexibility as it can be erased. The metaphor is to generate an intuition since the argument of Gigerenzer and colleagues is deeper and has to do with the bias-variance tradeoff, where simple models such as tallying have good predictive power, even better than simple linear regression with small samples (e.g. they reduce overfit problems).
 
 > “There is a point where too much information and too much information processing can hurt” Gigerenzer and Todd (1999) (p. 21)
-
-
 
 However, recently Paula Parpart and colleagues in 2018 reflected that less-is-more is a strange principle. They propose that the opposite principle makes sense in many other domains: more information is better. To demonstrate this, they tested tallying vs. regression in a common Bayesian framework. The details can be found in their paper, but the basic idea is simple: if there is a high probability that the weights are equal it is possible to detect it with a Bayesian approximation. In particular, we can test a prior on the weights of the characteristics (e.g. the four of the soccer example; but Parpart et al evaluated 20 different domains, not just soccer) such that at one end the prior sets all the weights to the same constant (tallying) and in the other extreme the prior weights are sufficiently diffuse so that we execute a traditional regression. The prior Parpart tested was flexible enough to find possibilities at either extreme.
 
