@@ -1,0 +1,71 @@
+0.5386 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+5.3412 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000191B1022D68>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000191B104E710>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.3415 	EXP 	window1: mouseVisible = True
+5.3415 	EXP 	window1: recordFrameIntervals = False
+5.5077 	EXP 	window1: recordFrameIntervals = True
+5.6914 	EXP 	window1: recordFrameIntervals = False
+6.1500 	EXP 	Created Instr_CategCaras_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='Instr_CategCaras_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+6.1685 	EXP 	Created Next_button_CategCaras_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='Images/next_button.png', interpolate=True, mask=None, maskParams=None, name='Next_button_CategCaras_image', opacity=1, ori=0.0, pos=array([ 0.8, -0.8]), size=array([0.140625, 0.25    ]), texRes=128.0, units='norm', win=Window(...))
+6.1685 	EXP 	window1: mouseVisible = True
+6.1700 	EXP 	Created FruitVeg_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='FruitVeg_image', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.28125, 0.5    ]), texRes=128.0, units='norm', win=Window(...))
+6.1701 	EXP 	window1: mouseVisible = True
+6.1701 	EXP 	window1: mouseVisible = True
+6.1714 	EXP 	Created Train_CategCaras_Izq_polygon = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.0, name='Train_CategCaras_Izq_polygon', opacity=1, ori=0.0, pos=array([-0.75,  0.75]), size=array([0.140625, 0.25    ]), units='norm', vertices=ndarray(...), win=Window(...))
+6.1719 	EXP 	Created Train_CategCaras_Der_polygon = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.0, name='Train_CategCaras_Der_polygon', opacity=1, ori=0.0, pos=array([0.75, 0.75]), size=array([0.140625, 0.25    ]), units='norm', vertices=ndarray(...), win=Window(...))
+6.1724 	EXP 	Created Train_CategCaras_Inferior_polygon = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-5.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.0, name='Train_CategCaras_Inferior_polygon', opacity=1, ori=0.0, pos=array([ 0. , -0.8]), size=array([0.140625, 0.25    ]), units='norm', vertices=ndarray(...), win=Window(...))
+6.2097 	EXP 	Created Train_CategCaras_Male_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.08, italic=False, languageStyle='LTR', name='Train_CategCaras_Male_text', opacity=1, ori=0.0, pos=array([-0.75,  0.5 ]), rgb=UNKNOWN, text='Fruta', units='norm', win=Window(...), wrapWidth=1)
+6.2121 	EXP 	Created Train_CategCaras_Female_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.08, italic=False, languageStyle='LTR', name='Train_CategCaras_Female_text', opacity=1, ori=0.0, pos=array([0.75, 0.5 ]), rgb=UNKNOWN, text='Verdura', units='norm', win=Window(...), wrapWidth=1)
+6.2190 	EXP 	Created NoLiftFinger_Warning_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='NoLiftFinger_Warning_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Cuando escoja no levante el dedo. ', units='norm', win=Window(...), wrapWidth=1)
+6.2221 	EXP 	Created Thanks_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Thanks_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Gracias por su participación. ', units='norm', win=Window(...), wrapWidth=1)
+6.2267 	EXP 	Imported CategCaras_instr.xlsx as conditions, 4 conditions, 1 params
+6.2269 	EXP 	Created sequence: sequential, trialTypes=4, nReps=1, seed=None
+6.2270 	EXP 	New trial (rep=0, index=0): {'I_CategCaras': 'Va a ver una imagen en pantalla. Tiene que escoger si es de categoria A o B.\nEmpecemos con un entrenamiento. \nOprima la flecha para continuar. '}
+6.2749 	EXP 	Instr_CategCaras_text: text = 'Va a ver una imagen en pantalla. Tiene que escoger si es de categoria A o B.\nEmpecemos con un entrenamiento. \nOprima la flecha para continuar. '
+6.2749 	EXP 	Instr_CategCaras_text: autoDraw = True
+6.2749 	EXP 	Next_button_CategCaras_image: autoDraw = True
+7.0788 	DATA 	Mouse: Left button down, pos=(1730,131)
+7.0956 	EXP 	New trial (rep=0, index=1): {'I_CategCaras': 'En el entrenamiento va a ver la imagen de  una fruta o verdura, la cual estara poco tiempo en pantalla.\nOprima la flecha para continuar. '}
+7.1091 	EXP 	Instr_CategCaras_text: autoDraw = False
+7.1091 	EXP 	Next_button_CategCaras_image: autoDraw = False
+7.1091 	EXP 	Instr_CategCaras_text: text = 'En el entrenamiento va a ver la imagen de  una fruta o verdura, la cual estara poco tiempo en pantalla.\nOprima la flecha para continuar. '
+7.1091 	EXP 	Instr_CategCaras_text: autoDraw = True
+7.1091 	EXP 	Next_button_CategCaras_image: autoDraw = True
+7.2093 	DATA 	Mouse:  Left button up, pos=(1729,131)
+7.6097 	DATA 	Mouse: Left button down, pos=(1729,131)
+7.6120 	EXP 	New trial (rep=0, index=2): {'I_CategCaras': 'Cuando desaparezca la imagen saldra un cuadrado en la parte inferior de la pantalla. \nPonga su dedo o mouse sobre ese cuadrado para ver las opciones FRUTA y VERDURA. Tiene que decidir si la imagen que vio era FRUTA o VERDURA.\nOprima la flecha para continuar.'}
+7.6268 	EXP 	Instr_CategCaras_text: autoDraw = False
+7.6268 	EXP 	Next_button_CategCaras_image: autoDraw = False
+7.6268 	EXP 	Instr_CategCaras_text: text = 'Cuando desaparezca la imagen saldra un cuadrado en la parte inferior de la pantalla. \nPonga su dedo o mouse sobre ese cuadrado para ver las opciones FRUTA y VERDURA. Tiene que decidir si la imagen que vio era FRUTA o VERDURA.\nOprima la flecha para continuar.'
+7.6268 	EXP 	Instr_CategCaras_text: autoDraw = True
+7.6268 	EXP 	Next_button_CategCaras_image: autoDraw = True
+7.7266 	DATA 	Mouse:  Left button up, pos=(1729,131)
+8.5777 	DATA 	Mouse: Left button down, pos=(1729,131)
+8.5800 	EXP 	New trial (rep=0, index=3): {'I_CategCaras': 'Si esta en una pantalla tactil, desplace su dedo sobre la pantalla desde el cuadrado inferior hacía la opcion escogida.\nOprima la flecha para empezar el ENTRENAMIENTO'}
+8.5938 	EXP 	Instr_CategCaras_text: autoDraw = False
+8.5938 	EXP 	Next_button_CategCaras_image: autoDraw = False
+8.5938 	EXP 	Instr_CategCaras_text: text = 'Si esta en una pantalla tactil, desplace su dedo sobre la pantalla desde el cuadrado inferior hacía la opcion escogida.\nOprima la flecha para empezar el ENTRENAMIENTO'
+8.5938 	EXP 	Instr_CategCaras_text: autoDraw = True
+8.5938 	EXP 	Next_button_CategCaras_image: autoDraw = True
+8.7110 	DATA 	Mouse:  Left button up, pos=(1729,131)
+9.1780 	DATA 	Mouse: Left button down, pos=(1729,131)
+9.1840 	EXP 	Imported CategCaras_Train_imgs.xlsx as conditions, 6 conditions, 2 params
+9.1841 	EXP 	Created sequence: random, trialTypes=6, nReps=1, seed=None
+9.1843 	EXP 	New trial (rep=0, index=0): {'Train_CategCaras_img_file': 'Images/CategCaras_Train/apple.png', 'Train_CategCaras_Type_img': 'Fruit'}
+9.1944 	EXP 	Instr_CategCaras_text: autoDraw = False
+9.1944 	EXP 	Next_button_CategCaras_image: autoDraw = False
+9.1944 	EXP 	FruitVeg_image: image = 'Images/CategCaras_Train/apple.png'
+9.1944 	EXP 	FruitVeg_image: autoDraw = True
+9.2968 	DATA 	Mouse:  Left button up, pos=(1729,131)
+9.9506 	WARNING 	Got keycode {} but that code isn't yet known
+9.9506 	WARNING 	Keypress was given unknown key code (44)
+10.1954 	EXP 	FruitVeg_image: autoDraw = False
+10.1954 	EXP 	FruitVeg_image: autoDraw = False
+10.1954 	EXP 	Train_CategCaras_Inferior_polygon: autoDraw = True
+10.8627 	EXP 	Train_CategCaras_Izq_polygon: autoDraw = True
+10.8627 	EXP 	Train_CategCaras_Der_polygon: autoDraw = True
+10.8627 	EXP 	Train_CategCaras_Male_text: autoDraw = True
+10.8627 	EXP 	Train_CategCaras_Female_text: autoDraw = True
+15.7570 	WARNING 	Got keycode {} but that code isn't yet known
+15.7570 	WARNING 	Keypress was given unknown key code (44)
+16.7526 	DATA 	Keypress: escape
+16.9102 	EXP 	window1: mouseVisible = True

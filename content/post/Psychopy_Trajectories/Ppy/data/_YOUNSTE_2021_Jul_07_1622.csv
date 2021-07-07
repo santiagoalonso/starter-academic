@@ -1,0 +1,12 @@
+﻿I_CategCaras,Trials_Instr_CategCaras.thisRepN,Trials_Instr_CategCaras.thisTrialN,Trials_Instr_CategCaras.thisN,Trials_Instr_CategCaras.thisIndex,Trials_Train_CategCaras.thisRepN,Trials_Train_CategCaras.thisTrialN,Trials_Train_CategCaras.thisN,Trials_Train_CategCaras.thisIndex,Train_CategCaras_img_file,Train_CategCaras_Type_img,Instr_CategCaras_text.started,Instr_CategCaras_text.stopped,Next_button_CategCaras_image.started,Next_button_CategCaras_image.stopped,Instr_CategCaras_mouse.x,Instr_CategCaras_mouse.y,Instr_CategCaras_mouse.leftButton,Instr_CategCaras_mouse.midButton,Instr_CategCaras_mouse.rightButton,Instr_CategCaras_mouse.clicked_name,Instr_CategCaras_mouse.started,Instr_CategCaras_mouse.stopped,FruitVeg_image.started,FruitVeg_image.stopped,Train_CategCaras.RT,Cedula,date,expName,psychopyVersion,frameRate,
+"Va a ver una imagen en pantalla. Tiene que escoger si es de categoria A o B.
+Empecemos con un entrenamiento. 
+Oprima la flecha para continuar. ",0,0,0,0,,,,,,,6.274870199966244,None,6.274870199966244,None,0.8010416666666667,-0.7574074074074074,1,0,0,Next_button_CategCaras_image,0.0020174002274870872,None,,,,,2021_Jul_07_1622,YOUNSTE,2021.1.4,59.93313856989516,
+"En el entrenamiento va a ver la imagen de  una fruta o verdura, la cual estara poco tiempo en pantalla.
+Oprima la flecha para continuar. ",0,1,1,1,,,,,,,7.109107000054792,None,7.109107000054792,None,0.8010416666666667,-0.7574074074074074,1,0,0,Next_button_CategCaras_image,0.005866800085641444,None,,,,,2021_Jul_07_1622,YOUNSTE,2021.1.4,59.93313856989516,
+"Cuando desaparezca la imagen saldra un cuadrado en la parte inferior de la pantalla. 
+Ponga su dedo o mouse sobre ese cuadrado para ver las opciones FRUTA y VERDURA. Tiene que decidir si la imagen que vio era FRUTA o VERDURA.
+Oprima la flecha para continuar.",0,2,2,2,,,,,,,7.626843900070526,None,7.626843900070526,None,0.8010416666666667,-0.7574074074074074,1,0,0,Next_button_CategCaras_image,0.004498300142586231,None,,,,,2021_Jul_07_1622,YOUNSTE,2021.1.4,59.93313856989516,
+"Si esta en una pantalla tactil, desplace su dedo sobre la pantalla desde el cuadrado inferior hacía la opcion escogida.
+Oprima la flecha para empezar el ENTRENAMIENTO",0,3,3,3,,,,,,,8.593768800026737,None,8.593768800026737,None,0.8010416666666667,-0.7574074074074074,1,0,0,Next_button_CategCaras_image,0.007250600145198405,None,,,,,2021_Jul_07_1622,YOUNSTE,2021.1.4,59.93313856989516,
+,,,,,,,,,,,,,,,,,,,,,,,9.194386100047268,None,3.3200952999759465,,,,,,
