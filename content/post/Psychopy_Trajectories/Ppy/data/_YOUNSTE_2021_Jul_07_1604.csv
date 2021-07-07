@@ -1,0 +1,4 @@
+﻿I_CategCaras,Trials_Instr_CategCaras.thisRepN,Trials_Instr_CategCaras.thisTrialN,Trials_Instr_CategCaras.thisN,Trials_Instr_CategCaras.thisIndex,Instr_CategCaras_text.started,Instr_CategCaras_text.stopped,Next_button_CategCaras_image.started,Next_button_CategCaras_image.stopped,Instr_CategCaras_mouse.x,Instr_CategCaras_mouse.y,Instr_CategCaras_mouse.leftButton,Instr_CategCaras_mouse.midButton,Instr_CategCaras_mouse.rightButton,Instr_CategCaras_mouse.clicked_name,Instr_CategCaras_mouse.started,Instr_CategCaras_mouse.stopped,Cedula,date,expName,psychopyVersion,frameRate,
+"Va a ver una imagen en pantalla. Tiene que escoger si es de categoria A o B.
+Empecemos con un entrenamiento. 
+Oprima la flecha para continuar. ",0,0,0,0,4.973693199921399,None,4.973693199921399,None,0.7927083333333333,-0.8185185185185185,1,0,0,Next_button_CategCaras_image,0.001563579891808331,None,,2021_Jul_07_1604,YOUNSTE,2021.1.4,60.154102763387776,
