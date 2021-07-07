@@ -54,5 +54,5 @@ In this post I show a simple experiment in Psychopy to collect trajectories ([he
 
 The data is in csv format, including the discrete decisions in each trial (FRUIT, VEGETABLE), reaction times (RT: time taken to leave the lower rectangle), movement times (MT: time to reach the options after leaving the lower rectangle), x, y coordinates, and time t of each coordinate.
 
-I think the code is valuable because Psychopy by default can pick up the position x, y, but to go to the next turn one of the objects has to be clicked. In this example, the next trial begins as soon as the preferred option is touched, without clicking the mouse. Therefore it is more suitable for touch screens.
+I think the code is valuable because Psychopy by default can record the position x, y, but to go to the next turn one of the objects has to be clicked. In this example, the next trial begins as soon as the preferred option is touched, without clicking the mouse. Therefore it is more suitable for touch screens.
 
