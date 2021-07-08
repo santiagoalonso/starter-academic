@@ -38,6 +38,24 @@ En esta entrada muestro un experimento simple en Psychopy para recoger trayector
 
 <center><img src="Exp_Design.png" width = "616" height = '234'></center>
 
+
+
+En el builder se ve algo así. En el loop principal, se muestra la imagen de una fruto o verdura rápidamente (Train_Img_CategCaras). Luego se recoge la respuesta (Train_CategCaras) y se chequea si se levanto el dedo de la pantalla (NoLiftFinger_Warning).
+
+<center><img src="Exp_Design_1.png" width = "521" height = '290'></center>
+
+
+
+Hay varios componentes (tres rectangulos, dos textos, y dos tipos de mouse para recoger el movimiento en distintos puntos del tiempo, y algo de código). Veamos los dos principales: los mouse y el código. En el mouse lo principal es poner End Routine on press en never. Luego en Data, poner Save mouse state en every frame. 
+
+ <center><img src="Exp_Design_3.png" width = "581" height = '215'></center>
+
+
+
+En el código lo principal es poner continueRoutine = False tan pronto el mouse o dedo este en uno de los rectangulos superiores. Así se vería para el izquierdo. Note que hay otra variable que se llama Options_Appear. Esta toma el valor falso apenas empieza el turno y se vuelve verdadera cuando el mouse está en el rectangulo inferior. 
+
+<center><img src="Exp_Design_2.png" width = "592" height = '57'></center>
+
 Los datos quedan en formato csv, incluyendo las decisiones discretas en cada turno (FRUTA, VERDURA), tiempos de reacción (RT: tiempo en salir del rectangulo inferior), tiempos de movimiento (MT: tiempo en llegar a las opciones luego de salir del rectangulo inferior ), coordenadas x,y, y tiempo t de cada coordenada.     
 
 El código creo que es valioso pues Psychopy por default puede recoger la posición x,y pero hay que hacer click en objetos para pasar al siguiente turno. En este ejemplo, se pasa tan pronto se toque la opción preferida, sin hacer click en el mouse. Por ello es más apropiado para pantallas táctiles. 
@@ -51,6 +69,24 @@ There is free software to collect trajectories ([e.g. 1](https://trajtracker.wix
 In this post I show a simple experiment in Psychopy to collect trajectories ([here the files and codes](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Psychopy_Trajectories/Ppy)). The person has to decide whether an image, which he sees for a short time, is a fruit or a vegetable. To begin, they must put their finger (or mouse) in a starting rectangle at the bottom of the screen. As soon the finger is in the bottom rectangle, two options / rectangles appear at the top left and right: "FRUIT" and "VEGETABLE". The person chooses by moving his finger from the lower rectangle to one of the two upper rectangles.
 
 <center><img src="Exp_Design.png" width = "616" height = '234'></center>
+
+
+
+In the builder it looks something like this. In the main loop, the image of a fruit or vegetable is displayed quickly (Train_Img_CategCaras). Then the response is collected (Train_CategCaras) and it is checked if the finger was lifted from the screen (NoLiftFinger_Warning).
+
+<center><img src="Exp_Design_1.png" width = "521" height = '290'></center>
+
+
+
+There are several components (three rectangles, two texts, and two types of mouse to collect movement at different points in time, and some code). Let's look at the two main ones: the mouse and the code. In the mouse the main thing is to put End Routine on press in never. Then in Data, put Save mouse state in every frame.
+
+ <center><img src="Exp_Design_3.png" width = "581" height = '215'></center>
+
+
+
+In the code the main thing is to put continueRoutine = False as soon as the mouse or finger is in one of the upper rectangles. This is what it would look like for the left. Notice that there is another variable called Options_Appear. This takes the value false as soon as the trial begins and becomes true when the mouse is in the lower rectangle.
+
+<center><img src="Exp_Design_2.png" width = "592" height = '57'></center>
 
 The data is in csv format, including the discrete decisions in each trial (FRUIT, VEGETABLE), reaction times (RT: time taken to leave the lower rectangle), movement times (MT: time to reach the options after leaving the lower rectangle), x, y coordinates, and time t of each coordinate.
 
