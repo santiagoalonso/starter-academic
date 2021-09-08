@@ -1,14 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Recording trajectories with Psychopy and Pavlovia"
+title: "Recording trajectories with Qualtrics"
 subtitle: ""
 summary: ""
 authors: []
 tags: []
 categories: []
-date: 2021-07-06T08:51:25-05:00
-lastmod: 2021-07-06T08:51:25-05:00
+date: 2021-09-06T08:51:25-05:00
+lastmod: 2021-09-06T08:51:25-05:00
 featured: false
 draft: false
 
@@ -30,65 +30,56 @@ projects: []
 
 # Español (English below; by Google translate)
 
-El análisis de trayectorias de mouse o en pantallas táctiles ha tomado fuerza en los últimos 10 años en ciencia cognitiva (e.g. [see Dotan, et al, 2019](https://www.sciencedirect.com/science/article/abs/pii/S1364661319302372)). La trayectorias son una ventana a procesamiento cognitivo interno. Por ejemplo, cuando hay que escoger entre dos opciones que difieren poco en valor, y hay que seleccionar en una pantalla táctil, el movimiento es más lento hacía la opción escogida reflejando su cercanía mental en valor. 
+En una [entrada anterior](https://santiago-alonso-diaz.netlify.app/post/psychopy_trajectories/) hice un pequeño ejemplo sobre cómo grabar trayectorias del mouse o en una superficie touch con Pavlovia. En esta entrada es el turno para software propietario, en particular Qualtrics. El esfuerzo es inspirado por lo hecho por [Mathur & Reichling](https://link.springer.com/article/10.3758/s13428-019-01258-6) quienes proveen su código de forma abierta para recoger trayectorias de mouse en Qualtrics. Acá extiendo ese esfuerzo para que se pueda hacer también en touch-screen y además que la decisión final no requiera clics, lo que hace la experiencia más fluida para el usuario.
 
-Hay software gratuito para recoger trayectorias ([e.g. 1](https://trajtracker.wixsite.com/trajtracker), [e.g. 2](http://www.mousetracker.org/)), pero son algo especificos. Psychopy es una libreria más general en Python para hacer experimentos que se conecta a Pavlovia, un servicio para hacer experimentos en línea, de forma relativamente fácil ("relativamente", hay veces puede ser enredado). 
+El código es para una tarea sencilla: mover el dedo (o cursor) desde una posición inicial en la parte inferior de la pantalla a una línea numérica ubicada en la parte superior. A la persona se le indica el número que debe moverse. Es una tarea similar a la propuesta por Dror Dotan en este [paper](https://www.sciencedirect.com/science/article/abs/pii/S0010027713001406). 
 
-En esta entrada muestro un experimento simple en Psychopy para recoger trayectorias ([acá los archivos y códigos](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Psychopy_Trajectories/Ppy)). La persona tiene que decidir si una imagen, que ve por poco tiempo, es fruta o verdura. Para empezar, debe poner su dedo (o mouse) en un rectangulo inicial en la parte baja de la pantalla. Tan pronto ponga el dedo, aparecen dos opciones/rectangulos en la parte superior izquierda y derecha: "FRUTA" y "VERDURA". La persona escoge moviendo el dedo desde el rectangulo inferior a uno de los dos rectangulos superiores. 
+<center><img src="Survey_2.png" width = "597" height = '364'></center>
 
-<center><img src="Exp_Design.png" width = "616" height = '234'></center>
+Lo primero es bajar el archivo qsf que pongo en mi [github](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Qualtrics_Trajectories). Asumo conocimiento previo de Qualtrics. Lo siguiente es empezar un nuevo proyecto con el archivo qsf. Una vez cargado debe verse algo así:
 
-
-
-En el builder se ve algo así. En el loop principal, se muestra la imagen de una fruto o verdura rápidamente (Train_Img_CategCaras). Luego se recoge la respuesta (Train_CategCaras) y se chequea si se levanto el dedo de la pantalla (NoLiftFinger_Warning).
-
-<center><img src="Exp_Design_1.png" width = "521" height = '290'></center>
+<center><img src="Survey_1.png" width = "762" height = '351'></center>
 
 
 
-Hay varios componentes (tres rectangulos, dos textos, y dos tipos de mouse para recoger el movimiento en distintos puntos del tiempo, y algo de código). Veamos los dos principales: los mouse y el código. En el mouse lo principal es poner End Routine on press en never. Luego en Data, poner Save mouse state en every frame. 
+El bloque "Instrucciones_slider" tiene las instrucciones. Hay algunas [imágenes](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Qualtrics_Trajectories) que si quieren ver deben cargar en su libreria de gráficas de Qualtrics. Una pregunta tiene código Javascript para que cada vez que la persona avance en la encuesta se ponga el navegador en pantalla completa.  
 
- <center><img src="Exp_Design_3.png" width = "581" height = '215'></center>
+El bloque "Entrenamiento_slider" tiene el loop principal. En el "loop & merge", el Field 2 tiene los números que se preguntan. Se pueden cambiar pero también hay que cambiar en el slider (a la izquierda Qualtrics pone las opciones del slider, y los limites se pueden cambiar en "Scale Points"). La primera pregunta del bloque es donde esta el Javascript que controla la recolección de coordenadas y la interacción con el usuario y la pantalla. Esta basado en lo hecho por [Mathur & Reichling](https://link.springer.com/article/10.3758/s13428-019-01258-6) pero con cambios sustanciales para que la persona no tenga que dar clics para confirmar su respuesta lo que permite que el código sirva tanto para desktops con mouse o dispositivos mobiles con touch-screens (el de Mathur solo sirve si la persona usa un mouse). 
 
+Como es usual en Qualtrics, la recolección de data requiere definir embedded data. Lo primero es crear un contact list nuevo. Se puede hacer cargando a contact lists el archivo de excel en mi [github](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Qualtrics_Trajectories). Luego en el survey flow añadir de primero la embedded data via una lista de contactos y seleccionar el nombre dado a la lista de contactos que se creo con el excel.
 
+<center><img src="Survey_Flow_5.png" width = "670" height = '326'></center>
 
-En el código lo principal es poner continueRoutine = False tan pronto el mouse o dedo este en uno de los rectangulos superiores. Así se vería para el izquierdo. Note que hay otra variable que se llama Options_Appear. Esta toma el valor falso apenas empieza el turno y se vuelve verdadera cuando el mouse está en el rectangulo inferior. 
-
-<center><img src="Exp_Design_2.png" width = "592" height = '57'></center>
-
-Los datos quedan en formato csv, incluyendo las decisiones discretas en cada turno (FRUTA, VERDURA), tiempos de reacción (RT: tiempo en salir del rectangulo inferior), tiempos de movimiento (MT: tiempo en llegar a las opciones luego de salir del rectangulo inferior ), coordenadas x,y, y tiempo t de cada coordenada.     
-
-El código creo que es valioso pues Psychopy por default puede recoger la posición x,y pero hay que hacer click en objetos para pasar al siguiente turno. En este ejemplo, se pasa tan pronto se toque la opción preferida, sin hacer click en el mouse. Por ello es más apropiado para pantallas táctiles. 
-
-# English (by Google translate)
-
-The analysis of mouse or touch screen trajectories has gained momentum in the last 10 years in cognitive science (eg [see Dotan, et al, 2019](https://www.sciencedirect.com/science/article/abs/pii / S1364661319302372)). Trajectories are a window into internal cognitive processing. For example, when you have to choose between two options that differ little in value, and you have to select on a touch screen, the movement is slower towards the chosen option reflecting its mental closeness in value.
-
-There is free software to collect trajectories ([e.g. 1](https://trajtracker.wixsite.com/trajtracker), [e.g. 2](http://www.mousetracker.org/)), but they are somewhat specific. Psychopy is a more general Python library for doing experiments that connects to Pavlovia, a service for doing experiments online, relatively easily ("relatively", there are times it can be confusing).
-
-In this post I show a simple experiment in Psychopy to collect trajectories ([here the files and codes](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Psychopy_Trajectories/Ppy)). The person has to decide whether an image, which he sees for a short time, is a fruit or a vegetable. To begin, they must put their finger (or mouse) in a starting rectangle at the bottom of the screen. As soon the finger is in the bottom rectangle, two options / rectangles appear at the top left and right: "FRUIT" and "VEGETABLE". The person chooses by moving his finger from the lower rectangle to one of the two upper rectangles.
-
-<center><img src="Exp_Design.png" width = "616" height = '234'></center>
+Es un ejemplo que se puede extender para que solo se muestren dos targets, uno a la izquierda y otro a la derecha, lo que es usual en estudios de mouse. Tan solo hay que modificar el Javascript. La función "update_slider" tiene el color de los números cuando se tocan. La función "color_slider" colorea los bordes de la barra superior que contiene los números. Con el siguiente comando se puede acceder a celdas individuales: var lis = document.getElementsByClassName("numbers")[0].getElementsByTagName("li"). La variable lis contiene cada una de las celdas de la barra. Con ella se puede cambiar el borde a blanco de las que no se quiere que aparezcan (con algo así: jQuery("li").css({ "border": "0px"}); aunque este comando cambia todas las celdas, habría que hacerlo celda por celda y dejar 1px solid black en la celda izquierda y derecha que se deseen dejar).
 
 
 
-In the builder it looks something like this. In the main loop, the image of a fruit or vegetable is displayed quickly (Train_Img_CategCaras). Then the response is collected (Train_CategCaras) and it is checked if the finger was lifted from the screen (NoLiftFinger_Warning).
+ 
 
-<center><img src="Exp_Design_1.png" width = "521" height = '290'></center>
-
-
-
-There are several components (three rectangles, two texts, and two types of mouse to collect movement at different points in time, and some code). Let's look at the two main ones: the mouse and the code. In the mouse the main thing is to put End Routine on press in never. Then in Data, put Save mouse state in every frame.
-
- <center><img src="Exp_Design_3.png" width = "581" height = '215'></center>
+# English (by Google translate with some edits)
 
 
 
-In the code the main thing is to put continueRoutine = False as soon as the mouse or finger is in one of the upper rectangles. This is what it would look like for the left. Notice that there is another variable called Options_Appear. This takes the value false as soon as the trial begins and becomes true when the mouse is in the lower rectangle.
+In a [previous entry](https://santiago-alonso-diaz.netlify.app/post/psychopy_rajectories/) I wrote a small example on how to record trajectories of the mouse or on a touch surface with Pavlovia. In this post it is the turn for proprietary software, in particular Qualtrics. The effort is inspired by what has been done by [Mathur & Reichling](https://link.springer.com/article/10.3758/s13428-019-01258-6) who provide their code openly to collect mouse trajectories in Qualtrics . Here I extend that effort so that it can also be done on touch-screen and also that the final decision does not require clicks, which makes the experience more fluid for the user.
 
-<center><img src="Exp_Design_2.png" width = "592" height = '57'></center>
+The code is for a simple task: move your finger (or cursor) from a starting position at the bottom of the screen to a number line located at the top. The person is told the number to move. It is a task similar to the one proposed by Dror Dotan in this [paper](https://www.sciencedirect.com/science/article/abs/pii/S0010027713001406).
 
-The data is in csv format, including the discrete decisions in each trial (FRUIT, VEGETABLE), reaction times (RT: time taken to leave the lower rectangle), movement times (MT: time to reach the options after leaving the lower rectangle), x, y coordinates, and time t of each coordinate.
 
-I think the code is valuable because Psychopy by default can record the position x, y, but to go to the next turn one of the objects has to be clicked. In this example, the next trial begins as soon as the preferred option is touched, without clicking the mouse. Therefore it is more suitable for touch screens.
 
+<center><img src="Survey_2.png" width = "597" height = '364'></center>
+
+The first thing is to download the qsf file that I put in my [github](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Qualtrics_Trajectories). I assume prior knowledge of Qualtrics. The next thing is to start a new project with the qsf file. Once loaded it should look something like this:
+
+<center><img src="Survey_1.png" width = "762" height = '351'></center>
+
+
+
+The "Instructions_slider" block has the instructions. There are some [images](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Qualtrics_Trajectories) that if you want to see you should upload to your Qualtrics graphics library. The question has Javascript code so that each time the person advances in the survey, the browser is placed in full screen.
+
+The "Training_slider" block has the main loop. In the "loop & merge", Field 2 has the numbers that are asked. They can be changed but also must be changed in the slider (Qualtrics puts the slider options on the left, and the limits can be changed in "Scale Points"). The first question of the block has the Javascript that controls the collection of coordinates and the interaction with the user and the screen. It is based on what was done by [Mathur & Reichling](https://link.springer.com/article/10.3758/s13428-019-01258-6) but with substantial changes so that the person does not have to click to confirm their answer which allows the code to work both for desktops with mouse or mobile devices with touch-screens (Mathur's only works if the person uses a mouse).
+
+As usual in Qualtrics, data collection requires defining embedded data. The first thing is to create a new contact list. It can be done by uploading to contact lists the excel file in my [github](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Qualtrics_Trajectories). Then, in the survey flow, add the embedded data via a contact list i.e. select the name given to the contact list that was created with the excel file.
+
+<center><img src="Survey_Flow_5.png" width = "670" height = '326'></center>
+
+It is an example that can be extended so that only two targets are shown, one on the left and one on the right, which is usual in mouse studies. You just have to modify the Javascript. The "update_slider" function has the color of the numbers when they are touched. The "color_slider" function colors the borders of the top bar that contains the numbers. With the following command, individual cells can be accessed: var lis = document.getElementsByClassName ("numbers") [0] .getElementsByTagName ("li"). The variable lis contains each of the cells in the bar. With it you can change the border to white of the ones you don't want to appear (with something like this: jQuery ("li"). Css ({"border": "0px"}); although this command changes all cells; it should be done cell by cell and leave 1px solid black in the left and right cell that you want to show on-screen).
