@@ -1,14 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Recording trajectories with Qualtrics"
+title: "Weber fraction (Python)"
 subtitle: ""
 summary: ""
 authors: []
 tags: []
 categories: []
-date: 2021-09-06T08:51:25-05:00
-lastmod: 2021-09-06T08:51:25-05:00
+date: 2021-09-24T08:51:25-05:00
+lastmod: 2021-09-24T08:51:25-05:00
 featured: false
 draft: false
 
@@ -30,63 +30,53 @@ projects: []
 
 # Español (English below; by Google translate)
 
-En una [entrada anterior](https://santiago-alonso-diaz.netlify.app/post/psychopy_trajectories/) hice un pequeño ejemplo sobre cómo grabar trayectorias del mouse o en una superficie touch con Pavlovia. En esta entrada es el turno para software propietario, en particular Qualtrics. El esfuerzo es inspirado por lo hecho por [Mathur & Reichling](https://link.springer.com/article/10.3758/s13428-019-01258-6) quienes proveen su código de forma abierta para recoger trayectorias de mouse en Qualtrics. Acá extiendo ese esfuerzo para que se pueda hacer también en touch-screen y además que la decisión final no requiera clics, lo que hace la experiencia más fluida para el usuario.
+La habilidad de comparar objetos visuales en su dimensión numérica es esencial. Por ejemplo, un depredador (leon) que ve subgrupos de presas (zebras) con diferentes individuos podría preferir perseguir al subgrupo menos numeroso para evitar contra ataques. Hay debates interminables en cognición numérica si en efecto nuestro cerebro, y el de otras muchas especies, compara basado en números o en otra propiedad sensorial que se correlaciona con número. Siguiendo con el anterior ejemplo, el subgrupo menos numeroso también es el que ocupa menos espacio. En general, ha sido difícil confirmar que estrategia usa nuestra cognición pues puede ser sensorial o puede abstraer todo lo sensorial y usar números en abstracto. En mi opinión, y sin entrar en toda la literatura, consideró que hay suficiente evidencia que confirma que nuestro cerebro puede usar propiedades abstractas, en especifico, números. 
 
-El código es para una tarea sencilla: mover el dedo (o cursor) desde una posición inicial en la parte inferior de la pantalla a una línea numérica ubicada en la parte superior. A la persona se le indica el número que debe moverse. Es una tarea similar a la propuesta por Dror Dotan en este [paper](https://www.sciencedirect.com/science/article/abs/pii/S0010027713001406). 
+Las personas difieren en su habilidad para manipular números. Experimentalmente y en las aulas se popularizó el uso de puntos para medir la hábilidad de estimar puntos, sin contar. Por ejemplo, la persona tiene que decir si vio más puntos a la izquierda o a la derecha de la pantalla.  
 
-<center><img src="Survey_2.png" width = "597" height = '364'></center>
+Una medida para cuantificar las habilidades de estimación se llama [fracción de Weber](https://www.unicog.org/publications/Dehaene_SymbolsQuantitiesMathematicalTheory_ChapterAttPerf2007.pdf). De manera intuitiva, mide que tan imprecisa es una persona en estimar rápidamente, sin contar, cantidades numéricas. Fracciones de Weber altas indican mayor imprecisión, y fracciones de Weber bajas una mejor habilidad de estimación. En la figura  de abajo se ven dos estudiantes de 4to grado que hicieron una tarea de comparar dos nubes de puntos y decir cuál era más numerosa. Esto lo hicieron por 120 turnos, y cada turno variaba en su dificultad (distancia numérica entre las nubes). El niño de la izquierda tiene mejor desempeño y menor fracción de Weber que el de la derecha. 
 
-Lo primero es bajar el archivo qsf que pongo en mi [github](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Qualtrics_Trajectories). Asumo conocimiento previo de Qualtrics. Lo siguiente es empezar un nuevo proyecto con el archivo qsf. Una vez cargado debe verse algo así:
-
-<center><img src="Survey_1.png" width = "762" height = '351'></center>
+<center><img src="Weber Fractions.png" width = "856" height = '367'></center>
 
 
 
-El bloque "Instrucciones_slider" tiene las instrucciones. Hay algunas [imágenes](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Qualtrics_Trajectories) que si quieren ver deben cargar en su libreria de gráficas de Qualtrics. Una pregunta tiene código Javascript para que cada vez que la persona avance en la encuesta se ponga el navegador en pantalla completa.  
+Una manera eficiente de calcular la fracción de Weber se propuso por [Steven Piantadosi](https://link.springer.com/article/10.3758/s13428-014-0558-8). En su articulo implementa la estimación con R. Acá traduzco esa implementación a Python. Lo único que se necesita es data que tenga los números que vio el niño en cada turno y si contestó bien o mal.  
 
-El bloque "Entrenamiento_slider" tiene el loop principal. En el "loop & merge", el Field 2 tiene los números que se preguntan. Se pueden cambiar pero también hay que cambiar en el slider (a la izquierda Qualtrics pone las opciones del slider, y los limites se pueden cambiar en "Scale Points"). La primera pregunta del bloque es donde esta el Javascript que controla la recolección de coordenadas y la interacción con el usuario y la pantalla. Esta basado en lo hecho por [Mathur & Reichling](https://link.springer.com/article/10.3758/s13428-019-01258-6) pero con cambios sustanciales para que la persona no tenga que dar clics para confirmar su respuesta lo que permite que el código sirva tanto para desktops con mouse o dispositivos mobiles con touch-screens (el de Mathur solo sirve si la persona usa un mouse). 
+El interés por la fracción de Weber es por un lado que es una medida de precisión del sistema visual para estimar números. Por otro lado, se ha relacionado con desempeño en matemáticas formales (aunque aún con mucho debate). De cualquier manera, tener una implementación en Python para estimar la fracción puede ser de utilidad.
 
-Como es usual en Qualtrics, la recolección de data requiere definir embedded data. Lo primero es crear un contact list nuevo. Se puede hacer cargando a contact lists el archivo de excel en mi [github](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Qualtrics_Trajectories). Luego en el survey flow añadir de primero la embedded data via una lista de contactos y seleccionar el nombre dado a la lista de contactos que se creo con el excel.
-
-<center><img src="Survey_Flow_5.png" width = "670" height = '326'></center>
-
-Es un ejemplo que se puede extender para que solo se muestren dos targets, uno a la izquierda y otro a la derecha, lo que es usual en estudios de mouse. Tan solo hay que modificar el Javascript. La función "update_slider" tiene el color de los números cuando se tocan. La función "color_slider" colorea los bordes de la barra superior que contiene los números. Con el siguiente comando se puede acceder a celdas individuales: var lis = document.getElementsByClassName("numbers")[0].getElementsByTagName("li"). La variable lis contiene cada una de las celdas de la barra. Con ella se puede cambiar el borde a blanco de las que no se quiere que aparezcan (con algo así: jQuery("li").css({ "border": "0px"}); aunque este comando cambia todas las celdas, habría que hacerlo celda por celda y dejar 1px solid black en la celda izquierda y derecha que se deseen dejar).
+Ver al final el código.
 
 
-
- 
 
 # English (by Google translate with some edits)
 
+The ability to compare visual objects in their numerical dimension is essential. For example, a predator (lion) that sees subgroups of prey (zebras) with different individuals might prefer to chase the less numerous subgroup to avoid counter attacks. There are endless debates in number cognition whether in fact our brain, and that of many other species, compares based on numbers or some other sensory property that correlates with number. Continuing with the previous example, the least numerous subgroup is also the one that occupies the least space. In general, it has been difficult to confirm which strategy our cognition uses, since it can be sensory or it can abstract everything sensory and use numbers in the abstract. In my opinion, and without going into all the literature,  there is enough evidence that confirms that our brain can use abstract properties, specifically, numbers.
 
+People differ in their ability to manipulate numbers. Experimentally and in the classrooms, the use of dots became popular to measure fast estimation. For example, the person has to say whether she saw more dots on the left or right of the screen.
 
-In a [previous entry](https://santiago-alonso-diaz.netlify.app/post/psychopy_rajectories/) I wrote a small example on how to record trajectories of the mouse or on a touch surface with Pavlovia. In this post it is the turn for proprietary software, in particular Qualtrics. The effort is inspired by what has been done by [Mathur & Reichling](https://link.springer.com/article/10.3758/s13428-019-01258-6) who provide their code openly to collect mouse trajectories in Qualtrics . Here I extend that effort so that it can also be done on touch-screen and also that the final decision does not require clicks, which makes the experience more fluid for the user.
-
-The code is for a simple task: move your finger (or cursor) from a starting position at the bottom of the screen to a number line located at the top. The person is told the number to move. It is a task similar to the one proposed by Dror Dotan in this [paper](https://www.sciencedirect.com/science/article/abs/pii/S0010027713001406).
-
-
-
-<center><img src="Survey_2.png" width = "597" height = '364'></center>
-
-The first thing is to download the qsf file that I put in my [github](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Qualtrics_Trajectories). I assume prior knowledge of Qualtrics. The next thing is to start a new project with the qsf file. Once loaded it should look something like this:
-
-<center><img src="Survey_1.png" width = "762" height = '351'></center>
+One measurement to determine number abilities is called the [Weber fraction](https://www.unicog.org/publications/Dehaene_SymbolsQuantitiesMathematicalTheory_ChapterAttPerf2007.pdf). Intuitively, it measures how imprecise a person is in quickly estimating, without counting, numerical quantities. High Weber fractions indicate greater imprecision, and low Weber fractions a better estimation ability. In the figure below you can see two 4th graders who did a task comparing two clouds of dots and tell which was more numerous. They did this for 120 turns, with each turn varying in difficulty (numerical distance between the clouds). The child on the left has a better performance and a lower Weber fraction than the child on the right.
 
 
 
-The "Instructions_slider" block has the instructions. There are some [images](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Qualtrics_Trajectories) that if you want to see you should upload to your Qualtrics graphics library. The question has Javascript code so that each time the person advances in the survey, the browser is placed in full screen.
+<center><img src="Weber Fractions.png" width = "856" height = '367'></center>
 
-The "Training_slider" block has the main loop. In the "loop & merge", Field 2 has the numbers that are asked. They can be changed but also must be changed in the slider (Qualtrics puts the slider options on the left, and the limits can be changed in "Scale Points"). The first question of the block has the Javascript that controls the collection of coordinates and the interaction with the user and the screen. It is based on what was done by [Mathur & Reichling](https://link.springer.com/article/10.3758/s13428-019-01258-6) but with substantial changes so that the person does not have to click to confirm their answer which allows the code to work both for desktops with mouse or mobile devices with touch-screens (Mathur's only works if the person uses a mouse).
+An efficient way to calculate the Weber fraction was proposed by [Steven Piantadosi](https://link.springer.com/article/10.3758/s13428-014-0558-8). In his article he implements the estimation with R. Here I translate that implementation to Python. All that is needed is data that has the numbers that the child saw each turn and if they answered correctly.
 
-As usual in Qualtrics, data collection requires defining embedded data. The first thing is to create a new contact list. It can be done by uploading to contact lists the excel file in my [github](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Qualtrics_Trajectories). Then, in the survey flow, add the embedded data via a contact list i.e. select the name given to the contact list that was created with the excel file.
+The interest in the Weber fraction is on the one hand that it is a measure of precision of the visual system to estimate numbers. On the other hand, it has been related to performance in formal mathematics (although still with much debate). Either way, having a Python implementation to estimate the fraction can help.
 
-<center><img src="Survey_Flow_5.png" width = "670" height = '326'></center>
+See the end for the code.
 
-It is an example that can be extended so that only two targets are shown, one on the left and one on the right, which is usual in mouse studies. You just have to modify the Javascript. The "update_slider" function has the color of the numbers when they are touched. The "color_slider" function colors the borders of the top bar that contains the numbers. With the following command, individual cells can be accessed: var lis = document.getElementsByClassName ("numbers") [0] .getElementsByTagName ("li"). The variable lis contains each of the cells in the bar. With it you can change the border to white of the ones you don't want to appear (with something like this: jQuery ("li"). Css ({"border": "0px"}); although this command changes all cells; it should be done cell by cell and leave 1px solid black in the left and right cell that you want to show on-screen).
+
 
 # Ejemplo de estimación de la fracción de Weber
 
+Los datos pueden encontrarse en mi [github](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Weber_Python), en un archivo de un estudiante de 4to grado que hizo una tarea de comparación de puntos. El nombre del archivo es 4th_grade_non_symbolic_task.csv. Las columnas son n1 (número más pequeño), n2 (número más grande), ratio (n1/n2), correct (0 error pues escogió el número más pequeño, 1 correcto). Los números n1 y n2 podían aparecer a la izquierda o derecha aleatoriamente. 
+
 # Weber fraction estimation example
+
+The data can be found on my [github](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Weber_Python), in a file from a 4th grader who did a comparison homework points. The file name is 4th_grade_non_symbolic_task.csv. The columns are n1 (smallest number), n2 (largest number), ratio (n1 / n2), correct (0 error because you chose the smallest number, 1 correct). The numbers n1 and n2 could appear to the left or right randomly.
+
+
 
 ```python
 def Weber_Estimate(W): 
