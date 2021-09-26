@@ -79,6 +79,11 @@ The data can be found on my [github](https://github.com/santiagoalonso/starter-a
 
 
 ```python
+import numpy as np
+import pandas as pd
+import scipy
+from matplotlib import pyplot as plt
+
 def Weber_Estimate(W): 
     #Based on Piantadosi's "Efficient estimation of Weber’s W"; Behav Res (2016) 48:42–52
     #This uses a 1/W prior for weber fraction (W) i.e. larger W become less likely a priori
