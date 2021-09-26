@@ -74,7 +74,7 @@ Los datos pueden encontrarse en mi [github](https://github.com/santiagoalonso/st
 
 # Weber fraction estimation example
 
-The data can be found on my [github](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Weber_Python), in a file from a 4th grader who did a comparison homework points. The file name is 4th_grade_non_symbolic_task.csv. The columns are n1 (smallest number), n2 (largest number), ratio (n1 / n2), correct (0 error because you chose the smallest number, 1 correct). The numbers n1 and n2 could appear to the left or right randomly.
+The data can be found on my [github](https://github.com/santiagoalonso/starter-academic/tree/master/content/post/Weber_Python), in a file from a 4th grader who did a dot comparison task. The file name is 4th_grade_non_symbolic_task.csv. The columns are n1 (smallest number), n2 (largest number), ratio (n1 / n2), correct (0 error because you chose the smallest number, 1 correct). The numbers n1 and n2 could appear to the left or right randomly.
 
 
 
